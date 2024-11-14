@@ -32,13 +32,13 @@ body
 
 header
 {
-    min-width: 100%;
+    width: 100%;
     height: 12vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--header-bgcolor);
-    gap: 15px;
+    gap: 12px;
     padding: 15px 1.5rem 15px 1.5rem;
     border: 1px solid var(--header-bordercolor);
     border-radius: .75rem;
@@ -194,8 +194,8 @@ header
 {
     background-color: var(--hero-bgcolor);
     border: 1px solid var(--header-bordercolor);
-    min-width: 100%;
-    height: 75vh;
+    max-width: 100%;
+    height: 550px;
     border-radius: .75rem;
     margin-left: auto;
     margin-right: auto;
@@ -232,6 +232,7 @@ header
 {
     text-align: center;
     max-width: 900px;
+    min-width: 200px;
 }
 
 .big-title-container h2
@@ -247,6 +248,7 @@ header
 .sub-text-container 
 {
     max-width: 800px;
+    min-width: 200px;
     text-align: center;
     font-family: "Sora" , sans-serif;
 }
@@ -389,7 +391,45 @@ header
         display: flex;
         justify-content: space-between;
     }
+    
+    .hero
+    {
+        height: 700px;
+    }
+
 }
 
 /* xs */
-@media (max-width: 475px) {}
+@media (max-width: 475px) 
+{
+    .main-logo-container h1
+    {
+        font-size: 1.25rem;
+    }
+
+    .hero
+    {
+        height: 750px;
+    }
+}
+
+/* xs */
+@media (max-width: 320px) 
+{
+    .hero
+    {
+        height: 900px;
+    }
+
+    .hero-buttons-container .book-call-container
+    {
+        
+        height: 100px;
+    }
+
+    .hero-buttons-container .book-call-container button 
+    {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
