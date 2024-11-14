@@ -1,0 +1,18 @@
+/* VARIABLE USED IN THE PROJECT */
+
+:root
+{
+    /* COLORS */
+    --body-bgcolor : #000f15;
+
+    --header-bgcolor : #050F13;
+    --header-bordercolor : #0A2322;
+    --header-mainlogo-fontcolor : rgb(180, 180, 180) ;
+    --header-nav-links-fontcolor : #69B8C7 ;
+    --header-nav-links-fontcolor-hover : #5ec5da ;
+    --header-bookcall-button-fontcolor : #E1E6E7;
+    --header-bookcall-button-bordercolor-hover : #1C4279;
+
+    --sidebar-bgcolor :#050F13 ;
+    --sidebar-bordercolor :#0A2322 ;
+}

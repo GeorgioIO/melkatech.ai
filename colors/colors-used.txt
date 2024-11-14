@@ -1,0 +1,20 @@
+#000f15 (Very Dark Blue-Green) - This is likely used for a primary background or accent.
+#050f13 (Black-Blue) - Might be part of the background or a shadow element.
+#040e13 (Deep Blue-Black) - Could be used for text or shadows.
+#020d13 (Very Dark Cyan-Blue) - Possibly used for minor accent or shadow areas.
+#000b11 (Almost Black-Blue) - Could be another part of the background or header/footer area.
+#020d12 (Dark Blue-Gray) - Likely part of text or button outlines.
+#010d13 (Dark Teal-Black) - This may appear in accents or borders.
+#000e14 (Dark Blue-Black) - Could be associated with text elements.
+#030e13 (Deep Cyan) - Likely a subtle background gradient.
+#081114 (Dark Charcoal Blue) - Often used for text or subtle backgrounds.
+#071114 (Dark Steel Blue) - Could appear in background variations.
+#071013 (Dark Ocean Blue) - May be used for accent bars or dividers.
+#040f13 (Dark Blue-Gray) - Another likely accent color.
+#010e14 (Deep Cyan-Black) - Potentially used in text or borders.
+#020e13 (Very Dark Teal) - Accent or minor UI elements.
+#081214 (Steel Blue) - Could be part of a hover effect or secondary UI elements.
+#011015 (Deep Slate Blue) - Likely used for text or other dark areas.
+#061013 (Dark Blue Slate) - Could be part of the primary or secondary text.
+#081013 (Dark Ocean Slate) - Used in subtle UI accents.
+#060f13 (Dark Bluish Teal) - Might be present in subtle highlights.
