@@ -12,7 +12,21 @@
     --header-nav-links-fontcolor-hover : #5ec5da ;
     --header-bookcall-button-fontcolor : #E1E6E7;
     --header-bookcall-button-bordercolor-hover : #1C4279;
+    --header-burger-menu-bgcolor : #5ec5da ;
+    --header-burger-menu-line-bgcolor : white;
 
     --sidebar-bgcolor :#050F13 ;
     --sidebar-bordercolor :#0A2322 ;
+
+    --hero-bgcolor: #050F13 ;
+    --hero-bordercolor : #0A2322;
+    --hero-title-fontcolor : #FFFCF9 ;
+    --hero-title-bgcolor : #052021 ;
+    --hero-bigtext-fontcolor : #FFFCF9;
+    --hero-para-fontcolor : #999C94 ;
+    --hero-para-bgcolor : #062021 ;
+    --hero-viewpricing-button-fontcolor :#FFFFFF ;
+    --hero-viewpricing-button-bgcolor : transparent ;
+    --hero-viewpricing-button-bordercolor :#FFFFFF ;
+    --hero-viewpricing-button-outlinecolor-hover :#1C4279 ;
 }
