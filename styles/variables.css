@@ -43,8 +43,10 @@
     --operation-perk-title-fontcolor : #FFFCF9;
     --operation-perk-description-fontcolor : #a3a3a3;
 
-
-
+    --services-bgcolor : #050F13;
+    --services-bordercolor : #0A2322;
+    --services-smalltitle-fontcolor : #FFFFFF;
+    --services-bigtitle-fontcolor : #FFFFFF;
 
 
 }
