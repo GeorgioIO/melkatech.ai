@@ -13,7 +13,7 @@
 body
 {
     background-color: var(--body-bgcolor);
-    height: 1000px;
+    
     margin: 30px;
     overflow-x: hidden;
     display: flex;
@@ -138,7 +138,7 @@ header
     border-right: 1px solid var(--sidebar-bordercolor);
     min-width: 30vw;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: none;
@@ -195,7 +195,7 @@ header
     background-color: var(--hero-bgcolor);
     border: 1px solid var(--header-bordercolor);
     width: 100%;
-    height: 550px;
+    height: 600px;
     border-radius: .75rem;
     margin-left: auto;
     margin-right: auto;
@@ -250,7 +250,7 @@ header
     max-width: 800px;
     min-width: 200px;
     text-align: center;
-    font-family: "Sora" , sans-serif;
+    
 }
 
 .sub-text-container p
@@ -258,6 +258,7 @@ header
     font-size: 20px;
     line-height: 28px;
     font-weight: 500;
+    font-family: "Sora" , sans-serif;
     color: var(--hero-para-fontcolor);
 }
 
@@ -291,13 +292,13 @@ header
     outline: 4px solid transparent;  
     transition: all ease-in-out 0.5s;
 }
-/* -------------------------------------------- HERO -------------------------------------------- */
+/* -------------------------------------------- SOCIAL PROOFS -------------------------------------------- */
 .social-proofs
 {
     background-color: var(--past-work-bgcolor);
     border: 1px solid var(--past-work-bordercolor);
     width: 100%;
-    height: 120px;
+    height: 150px;
     border-radius: .75rem;
     margin-left: auto;
     margin-right: auto;
@@ -318,13 +319,158 @@ header
     width: 100%;
     height: 100%;
 }
+
+/* -------------------------------------------- OPERATION PERKS -------------------------------------------- */
+
+
+.operation
+{
+    background-color: var(--operation-bgcolor);
+    border: 1px solid var(--operation-bordercolor);
+    width: 100%;
+    height: 750px;
+    padding: 60px;
+    border-radius: .75rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.operation-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.operation .big-title-container h2
+{
+    text-align: center;
+    font-family: "Sora" , sans-serif;
+    line-height: 60px;
+    font-size: 48px;
+    font-weight: 500;
+    color: var(--operation-bigtext-fontcolor);
+}
+
+.operation .sub-text-container 
+{
+    max-width: 875px;
+    min-width: 200px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.operation .sub-text-container p
+{
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    color: var(--operation-para-fontcolor);
+}
+
+.operation-perks-container
+{
+    display: flex;
+    gap: 90px;
+}
+
+.perk-card
+{
+    width: 340px;
+    min-width: 240px;
+    padding: 30px 30px 30px 10px;
+    border-top-right-radius: 0.65rem;
+    border-top-left-radius: 0.65rem;
+    border-top: 2px solid var(--operation-perkcard-bordercolor);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 18px;
+}
+
+.perk-card .perk-number-container
+{
+    width: 45px;
+    height: 45px;
+    background-color: var(--operation-perk-number-bgcolor);
+    text-align: center;
+    border-radius: .75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.perk-card .perk-number-container h2
+{
+    font-family: "Sora" , sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: var(--operation-perk-number-fontcolor );
+}
+
+.perk-card .perk-title-container h2
+{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    font-family: "Sora" , sans-serif;
+    color: var(--operation-perk-title-fontcolor);
+}
+
+.perk-card .perk-description-container p
+{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    font-family: "Sora" , sans-serif;
+    color: var(--operation-perk-description-fontcolor);
+}
+
 /* -------------------------------------------- MEDIA QUERIES -------------------------------------------- */
 
 /* 2xl */
-@media (max-width: 1536px) {}
+@media (max-width: 1536px) 
+{
+
+    /* OPERATION */
+    .perk-card
+    {
+        width: 300px;
+    }
+}
 
 /* xl */
-@media (max-width: 1280px) {}
+@media (max-width: 1280px) 
+{
+    /* OPERATION */
+    .operation-perks-container
+    {
+        justify-self: center;
+        gap: 35px;
+    }
+
+    .perk-card
+    {
+        width: 250px;
+        height: 400px;
+    }
+
+    .operation
+    {
+        height: 850px;
+    }
+
+    .operation .big-title-container h2
+    {
+        font-size: 44px;
+    }
+
+
+}
 
 /* lg - Burger menu*/ 
 @media (max-width: 1024px) 
@@ -370,9 +516,41 @@ header
         display: flex;
     }
 
+    /* OPERATION */
+
+    .operation
+    {
+        height: 1100px;
+    }
+    .operation-perks-container
+    {
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    .operation-perks-container .perk-card:nth-child(3)
+    {
+        width: 525px;
+        height: 260px;
+    }
+
+    .operation .big-title-container h2
+    {
+        font-size: 40px;
+    }
     
 }
 
+@media (max-width: 884px) 
+{
+    /* OPERATION */
+
+    .operation .big-title-container h2
+    {
+        font-size: 34px;
+    }
+
+}
 /* md */
 @media (max-width: 768px) 
 {
@@ -397,7 +575,30 @@ header
         width: 100%;
     }
 
+    /* OPERATION */
+    .operation
+    {
+        height: 1700px;
+    }
 
+    .operation .big-title-container h2
+    {
+        font-size: 28px;
+        text-align: left;
+        line-height: 38px;
+    }
+
+    .operation-perks-container
+    {
+        flex-direction: column;
+    }
+
+    .perk-card,
+    .operation-perks-container .perk-card:nth-child(3)
+    {
+        width: 300px;
+        height: 400px;
+    }
     
 }
 
@@ -454,12 +655,28 @@ header
         padding: 20px;
     }
 
-    
+    /* OPERATION */
+
+    .operation
+    {
+        height: 1900px;
+    }
+
+    .operation-container
+    {
+        align-items: center;
+    }
+    .perk-card,
+    .operation-perks-container .perk-card:nth-child(3)
+    {
+        width: 220px;
+        height: 400px;
+    }
 
 }
 
 /* xs */
-@media (max-width: 320px) 
+@media (max-width: 330px) 
 {
     .hero
     {
@@ -476,5 +693,13 @@ header
     {
         flex-direction: column;
         flex-wrap: wrap;
+    }
+
+    /* OPERATION */
+    .perk-card,
+    .operation-perks-container .perk-card:nth-child(3)
+    {
+        width: 190px;
+        height: 400px;
     }
 }

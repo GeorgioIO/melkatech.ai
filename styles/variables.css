@@ -33,4 +33,18 @@
     --past-work-bgcolor : #050F13 ;
     --past-work-bordercolor : #0A2322;
 
+    --operation-bgcolor : #050F13;
+    --operation-bordercolor : #0A2322;
+    --operation-bigtext-fontcolor : #FFFCF9;
+    --operation-para-fontcolor : rgb(163, 163, 163);
+    --operation-perkcard-bordercolor : #0A2322 ;
+    --operation-perk-number-bgcolor : #062223;
+    --operation-perk-number-fontcolor : #FFFCF9;
+    --operation-perk-title-fontcolor : #FFFCF9;
+    --operation-perk-description-fontcolor : #a3a3a3;
+
+
+
+
+
 }
