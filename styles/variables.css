@@ -47,6 +47,9 @@
     --services-bordercolor : #0A2322;
     --services-smalltitle-fontcolor : #FFFFFF;
     --services-bigtitle-fontcolor : #FFFFFF;
-
+    --services-icon-bgcolor : #0D2321;
+    --services-card-title-fontcolor : #FFFFFF;
+    --services-card-description-fontcolor : #a3a3a3;
+    --services-card-bordercolor : #0A2322;
 
 }
