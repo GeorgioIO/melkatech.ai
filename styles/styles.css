@@ -462,7 +462,8 @@ header
     display: flex;
 }
 
-.services .small-title-container
+.services .small-title-container,
+.testimonials .small-title-container
 {
     background-color: transparent;
     padding: 0px;
@@ -474,7 +475,8 @@ header
     
 }
 
-.services .small-title-container p
+.services .small-title-container p,
+.testimonials .small-title-container p
 {
     background-color: var(--hero-title-bgcolor);
     padding: 5px 15px 5px 15px;
@@ -572,6 +574,107 @@ header
     line-height: 28px;
     font-family: "Sora" , sans-serif;
     color: var(--services-card-description-fontcolor);
+}
+/* -------------------------------------------- TESTIMONIALS -------------------------------------------- */
+.testimonials
+{
+    border: 1px solid var(--services-bordercolor);
+    width: 100%;
+    height: 450px;
+    padding: 50px;
+    border-radius: .75rem;
+    margin-right: auto;
+    margin-left: auto;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.testimonial-attribution-container
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonials .testimonial-text-container,
+.testimonials .testimonial-attributioner-container,
+.testimonials .testimonial-attributioner-role-container
+{
+    padding: 10px 10px 10px 0px;
+}
+
+.testimonials .testimonial-attributioner-container
+{
+    padding-bottom: 0px;
+}
+
+.testimonials .testimonial-attributioner-role-container
+{
+    padding-top: 0px;
+}
+
+.testimonials .testimonial-text-container p
+{
+    font-size: 48px;
+    font-family: "Sora" , sans-serif;
+    font-weight: 500;
+    line-height: 60px;
+    color: var(--testimonials-test-text-fontcolor);
+}
+
+.testimonials .testimonial-attributioner-container p
+{
+    font-size: 20px;
+    font-family: "Sora" , sans-serif;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--testimonials-attribution-fontcolor);
+}
+
+.testimonials .testimonial-attributioner-role-container p
+{
+    font-size: 16px;
+    font-family: "Sora" , sans-serif;
+    font-weight: 300;
+    line-height: 24px;
+    color: var(--testimonials-attributioner-role-fontcolor);
+}
+
+.switchers-container
+{
+    /* background-color: bisque; */
+    width: 100px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    gap: 5px;
+}
+
+.switch,
+.switch-active
+{
+    width: 20px;
+    height: 6px;
+    background-color: var(--testimonials-switch-btn-bgcolor);
+    border-radius: .75rem;
+    transition: transform ease-out 0.3s;
+    will-change: transform;
+}
+
+.switch:hover
+{
+    transform: scaleX(1.2);
+    background-color: var(--testimonials-switch-btn-bgcolor-active);
+}
+
+.switch-active
+{
+    width: 24px;
+    background-color: var(--testimonials-switch-btn-bgcolor-active);
 }
 
 /* -------------------------------------------- MEDIA QUERIES -------------------------------------------- */
@@ -756,8 +859,11 @@ header
         font-size: 34px;
     }
 
- 
-
+    /* TESTIMONIALS */
+    .testimonials
+    {
+        height: 500px;
+    }
 }
 
 /* md */
@@ -821,6 +927,12 @@ header
         height: 330px;
     }
 
+    /* TESTIMONIALS */
+    .testimonials
+    {
+        height: 550px;
+    }
+
 }
 
 @media (max-width: 727px) 
@@ -839,6 +951,12 @@ header
     {
         width: 100%;
         height: 250px;
+    }
+
+    /* TESTIMONIALS */
+    .testimonials
+    {
+        height: 600px;
     }
 }
 
@@ -889,6 +1007,17 @@ header
     .service-card
     {
         height: 340px;
+    }
+
+    /* TESTIMONIALS */
+    .testimonials
+    {
+        height: 650px;
+    }
+
+    .testimonials .testimonial-text-container P
+    {
+        font-size: 36px;
     }
 }
 
@@ -956,6 +1085,18 @@ header
         font-size: 15px;
         line-height: 20px;
     }
+
+    /* TESTIMONIALS */
+    .testimonials
+    {
+        height: 750px;
+    }
+
+    .testimonials .testimonial-text-container P
+    {
+        font-size: 32px;
+        line-height: 50px;
+    }
 }
 
 @media (max-width: 367px) 
@@ -969,6 +1110,13 @@ header
     .service-card
     {
         height: 320px;
+    }
+
+    /* TESTIMONIALS */
+
+    .testimonials .testimonial-text-container P
+    {
+        font-size: 28px;
     }
 }
 /* xs */

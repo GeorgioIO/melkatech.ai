@@ -52,4 +52,14 @@
     --services-card-description-fontcolor : #a3a3a3;
     --services-card-bordercolor : #0A2322;
 
+    --testimonials-bgcolor :#050F13 ;
+    --testimonials-bordercolor : #0A2322;
+    --testimonials-smalltitle-fontcolor :#FFFFFF;
+    --testimonials-test-text-fontcolor : #FFFFFF ;
+    --testimonials-attribution-fontcolor : #FFFFFF ;
+    --testimonials-attributioner-role-fontcolor : #a3a3a3 ;
+    --testimonials-switch-btn-bgcolor : #E5E5E5 ;
+    --testimonials-switch-btn-bgcolor-active : #56CEEA ;
+
+
 }
