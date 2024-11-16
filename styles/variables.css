@@ -61,5 +61,16 @@
     --testimonials-switch-btn-bgcolor : #E5E5E5 ;
     --testimonials-switch-btn-bgcolor-active : #56CEEA ;
 
+    --comparison-bgcolor : #050F13 ;
+    --comparison-bordercolor : #0A2322 ;
+    --comparison-smalltitle-fontcolor : #FFFFFF;
+    --comparison-bigtitle-fontcolor : #FFFFFF;
+    --comparison-table-row-bordercolor : #0D2321;
+    --comparison-table-sidetitles-fontcolor : #FFFFFF;
+    --comparison-table-headtitles-fontcolor : #FFFFFF;
+    --comparison-table-values-bgcolor : #0D2321;
+    --comparison-table-values-fontcolor : #d4d4d4;
+    --comparison-table-vitruvian-values-gradientcolor-two : #51B8DE;
+    --comparison-table-vitruvian-values-gradientcolor-one : #44C6B4;
 
 }

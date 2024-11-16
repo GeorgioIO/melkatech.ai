@@ -463,7 +463,8 @@ header
 }
 
 .services .small-title-container,
-.testimonials .small-title-container
+.testimonials .small-title-container,
+.comparison .small-title-container
 {
     background-color: transparent;
     padding: 0px;
@@ -476,7 +477,8 @@ header
 }
 
 .services .small-title-container p,
-.testimonials .small-title-container p
+.testimonials .small-title-container p,
+.comparison .small-title-container p
 {
     background-color: var(--hero-title-bgcolor);
     padding: 5px 15px 5px 15px;
@@ -677,6 +679,105 @@ header
     background-color: var(--testimonials-switch-btn-bgcolor-active);
 }
 
+/* -------------------------------------------- COMPARISON -------------------------------------------- */
+
+.comparison
+{
+    border: 1px solid var(--comparison-bordercolor);
+    width: 100%;
+    height: 800px;
+    padding: 50px;
+    border-radius: .75rem;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: var(--comparison-bgcolor);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;    
+    gap: 10px;
+}
+
+.comparison .big-title-container 
+{
+    margin-bottom: 50px;
+}
+
+.comparison .big-title-container h2
+{
+    font-family: "Sora" , sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 60px;
+    color: var(--comparison-bigtitle-fontcolor);
+    text-wrap: nowrap;
+}
+
+.comparison-table
+{
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+.comparison-table thead td
+{
+    text-align: center;
+}
+
+.comparison-table th,
+.comparison-table .table-titles,
+.comparison-table .table-side-titles
+{
+    font-family: "Sora" , sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--comparison-table-sidetitles-fontcolor);
+}
+
+.comparison-table th
+{
+    padding: 30px;
+}
+
+.comparison-table .table-titles,
+.comparison-table .table-side-titles
+{
+    padding: 20px;
+    text-wrap: nowrap;
+}
+
+.comparison-table td,
+.comparison-table th
+{
+    border-top: 1px solid var(--comparison-table-row-bordercolor);
+}
+
+.comparison-table .table-values
+{
+    text-align: center;
+}
+
+.comparison-table .table-values p
+{
+    background-color: var(--comparison-table-values-bgcolor);
+    color: var(--comparison-table-values-fontcolor );
+    display: inline;
+    padding: 5px 10px 5px 10px;
+    border-radius: .45rem;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    font-family: "Sora" , sans-serif;
+    text-wrap: nowrap;
+}
+
+.comparison-table .table-values p.vitruvian-values
+{
+    background: linear-gradient(to right, var(--comparison-table-vitruvian-values-gradientcolor-one), var(--comparison-table-vitruvian-values-gradientcolor-two));
+}
+
 /* -------------------------------------------- MEDIA QUERIES -------------------------------------------- */
 
 /* 2xl */
@@ -772,6 +873,16 @@ header
     {
         width: 400px;
         height: 300px;
+    }
+
+    /* COMPARISON */
+    td#freelance-title,
+    td#otheragencies-title,
+    td#void-title,
+    td.del-val,
+    .comparison-table .table-side-titles
+    {
+        display: none;
     }
 }
 
@@ -933,8 +1044,12 @@ header
         height: 550px;
     }
 
+    /* COMPARISON */
+    .comparison .big-title-container h2
+    {
+        font-size: 38px;
+    }
 }
-
 @media (max-width: 727px) 
 {
     /* SERVICES */
@@ -1019,6 +1134,12 @@ header
     {
         font-size: 36px;
     }
+
+    /* COMPARISON */
+    .comparison .big-title-container h2
+    {
+        font-size: 30px;
+    }
 }
 
 /* xs */
@@ -1097,6 +1218,32 @@ header
         font-size: 32px;
         line-height: 50px;
     }
+
+    /* COMPARISON */
+    .comparison
+    {
+        padding: 30px;
+    }
+
+    .comparison .big-title-container h2
+    {
+        font-size: 23px;
+        
+    }
+
+    .comparison-table .table-titles,
+    .comparison-table .table-side-titles
+    {
+        padding: 10px;
+        text-wrap: nowrap;
+        font-size: 12px;
+    }
+
+    .comparison-table .table-values p
+    {
+        font-size: 10px;
+    }
+
 }
 
 @media (max-width: 367px) 
@@ -1118,6 +1265,33 @@ header
     {
         font-size: 28px;
     }
+
+    /* COMPARISON */
+    .comparison
+    {
+        padding: 20px;
+    }
+
+    .comparison .big-title-container h2
+    {
+        font-size: 19px;
+        
+    }
+
+    .comparison-table .table-titles,
+    .comparison-table .table-side-titles
+    {
+        padding: 5px;
+        text-wrap: nowrap;
+        font-size: 10px;
+    }
+
+    .comparison-table .table-values p
+    {
+        font-size: 10px;
+        padding: 5px 2.5px 5px 2.5px;
+    }
+    
 }
 /* xs */
 @media (max-width: 330px) 
@@ -1161,5 +1335,30 @@ header
     .service-card .service-card-description-container
     {
         padding-left: 20px;
+    }
+
+    /* COMPARISON */
+    .comparison
+    {
+        padding: 20px;
+    }
+
+    .comparison .big-title-container h2
+    {
+        font-size: 17px;
+        
+    }
+
+    .comparison-table .table-titles,
+    .comparison-table .table-side-titles
+    {
+        padding: 5px;
+        text-wrap: nowrap;
+        font-size: 10px;
+    }
+
+    .comparison-table .table-values p
+    {
+        font-size: 10px;
     }
 }
