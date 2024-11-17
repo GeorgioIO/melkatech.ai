@@ -464,7 +464,8 @@ header
 
 .services .small-title-container,
 .testimonials .small-title-container,
-.comparison .small-title-container
+.comparison .small-title-container,
+.case-studies .small-title-container
 {
     background-color: transparent;
     padding: 0px;
@@ -478,7 +479,8 @@ header
 
 .services .small-title-container p,
 .testimonials .small-title-container p,
-.comparison .small-title-container p
+.comparison .small-title-container p,
+.case-studies .small-title-container p
 {
     background-color: var(--hero-title-bgcolor);
     padding: 5px 15px 5px 15px;
@@ -778,6 +780,128 @@ header
     background: linear-gradient(to right, var(--comparison-table-vitruvian-values-gradientcolor-one), var(--comparison-table-vitruvian-values-gradientcolor-two));
 }
 
+/* -------------------------------------------- CASE STUDIES -------------------------------------------- */
+
+.case-studies
+{
+    width: 100%;
+    height: 1000px;
+    border-radius: .75rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.case-studies .big-title-container
+{
+    margin-bottom: 20px;
+}
+
+.case-studies .big-title-container h2
+{
+    font-family: "Sora" , sans-serif;
+    font-weight: 500;
+    line-height: 60px;
+    font-size: 48px;
+    color: var(--case-studies-bigtitle-fontcolor);
+}
+
+.case-studies-container
+{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "left top"
+    "left bottom";
+    gap: 30px;
+}
+
+.case-studies-container div
+{
+    border-radius: 1rem;
+    position: relative;
+}
+
+
+.case-studies-container div img
+{
+    border-radius: 1rem;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.one
+{
+    grid-area: left;
+    max-height: 848px;
+    background-image: url("../images/case-study-1.jpg");
+}
+
+.two
+{
+    grid-area: top;
+    max-height: 409px;
+    background-image: url("../images/case-study-2.png");
+
+
+}
+
+.three
+{
+    grid-area: bottom;
+    max-height: 409px;
+    background-image: url("../images/case-study-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.case-studies-container .case-study-content
+{
+    position: absolute;
+    bottom: 0;
+    background-color: var(--case-study-content-bgcolor);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px ;
+    height: 25%;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.case-studies-container div.two .case-study-content,
+.case-studies-container div.three .case-study-content
+{
+    height: 45%;
+}
+
+.case-study-content .case-study-title-container h3
+{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    font-family: "Sora" , sans-serif;
+    color: var(--case-study-content-title-fontcolor);
+}
+
+.case-study-content .case-study-description-container p
+{
+    font-size: 1rem;
+    font-family: "Sora" , sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--case-study-content-description-fontcolor );
+}
+
 /* -------------------------------------------- MEDIA QUERIES -------------------------------------------- */
 
 /* 2xl */
@@ -975,6 +1099,19 @@ header
     {
         height: 500px;
     }
+
+    /* CASE STUDIES */
+    .case-studies-container div.two .case-study-content,
+    .case-studies-container div.three .case-study-content
+    {
+        height: 50%;
+    }
+
+    .case-study-content .case-study-description-container p
+    {
+        font-size: 0.85rem;
+        line-height: 20px;
+    }
 }
 
 /* md */
@@ -1049,6 +1186,25 @@ header
     {
         font-size: 38px;
     }
+
+    /* CASE STUDIES */
+    .case-studies
+    {
+        height: 2000px;
+    }
+
+    div.two .case-study-content,
+    div.three .case-study-content
+    {
+        height: 60%;
+    }
+
+    .case-study-content .case-study-description-container p
+    {
+        font-size: 0.85rem;
+        line-height: 20px;
+    }
+
 }
 @media (max-width: 727px) 
 {
@@ -1072,6 +1228,39 @@ header
     .testimonials
     {
         height: 600px;
+    }
+
+    /* CASE STUDIES */
+    .case-studies-container
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        height: auto;
+    }
+
+    .one
+    {
+        width: 100%;
+        height: 800px;
+    }
+
+    .two
+    {
+        width: 100%;
+        height: 500px;
+    }
+
+    .three
+    {
+        width: 100%;
+        height: 500px;
+    }
+
+    /* CASE STUDIES */
+    .case-studies .big-title-container h2 
+    {
+        font-size: 36px;
     }
 }
 
@@ -1139,6 +1328,12 @@ header
     .comparison .big-title-container h2
     {
         font-size: 30px;
+    }
+
+    /* CASE STUDIES */
+    .case-studies .big-title-container h2 
+    {
+        font-size: 33px;
     }
 }
 
@@ -1244,6 +1439,36 @@ header
         font-size: 10px;
     }
 
+
+    /* CASE STUDIES */
+    .one,
+    .two,
+    .three
+    {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .case-studies-container div.one .case-study-content
+    {
+        height: 35%;
+        gap: 10px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        justify-content: center;
+    }
+
+    .case-studies-container div.two .case-study-content,
+    .case-studies-container div.three .case-study-content
+    {
+        height: 60%;
+    }
+
+    .case-studies .big-title-container h2 
+    {
+        font-size: 23px;
+        text-wrap: nowrap;
+    }
 }
 
 @media (max-width: 367px) 
@@ -1292,6 +1517,22 @@ header
         padding: 5px 2.5px 5px 2.5px;
     }
     
+    /* CASE STUDIES */
+
+    .case-studies .case-study-content h3
+    {
+        font-size: 16px;
+    }
+
+    .case-studies .big-title-container h2 
+    {
+        font-size: 20px;
+    }
+
+    .two
+    {
+        background-position: left;
+    }
 }
 /* xs */
 @media (max-width: 330px) 
@@ -1360,5 +1601,23 @@ header
     .comparison-table .table-values p
     {
         font-size: 10px;
+    }
+
+    /* CASE STUDIES */
+    .case-studies
+    {
+        height: 2100px
+    }
+
+    .case-studies-container
+    {
+        height: 1900px
+    }
+
+    .case-studies-container div.one .case-study-content,
+    .case-studies-container div.two .case-study-content,
+    .case-studies-container div.three .case-study-content
+    {
+        padding: 15px;
     }
 }
