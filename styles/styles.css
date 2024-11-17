@@ -1220,7 +1220,7 @@ header
     }
 
     /* COMPARISON */
-    .comparison
+    div.comparison
     {
         padding: 30px;
     }
