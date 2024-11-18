@@ -465,7 +465,8 @@ header
 .services .small-title-container,
 .testimonials .small-title-container,
 .comparison .small-title-container,
-.case-studies .small-title-container
+.case-studies .small-title-container,
+.pricing .small-title-container 
 {
     background-color: transparent;
     padding: 0px;
@@ -480,7 +481,8 @@ header
 .services .small-title-container p,
 .testimonials .small-title-container p,
 .comparison .small-title-container p,
-.case-studies .small-title-container p
+.case-studies .small-title-container p,
+.pricing .small-title-container p
 {
     background-color: var(--hero-title-bgcolor);
     padding: 5px 15px 5px 15px;
@@ -802,6 +804,7 @@ header
 
 .case-studies .big-title-container h2,
 .subscription-steps .big-title-container h2
+.pricing .big-title-container h2
 {
     font-family: "Sora" , sans-serif;
     font-weight: 500;
@@ -908,7 +911,7 @@ header
 .subscription-steps
 {
     width: 100%;
-    height: 1000px;
+    height: auto;
     margin-right: auto;
     margin-left: auto;
     display: flex;
@@ -1019,8 +1022,173 @@ header
     color: var(--subscription-step-description-fontcolor);
 }
 
+/* -------------------------------------------- PRICING -------------------------------------------- */
 
+.pricing
+{
+    background-color: var(--pricing-bgcolor);
+    border: 1px solid var(--pricing-bordercolor);
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    border-radius: .75rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+    align-items: flex-start;
+}
 
+.pricing-titles
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.pricing-card-container
+{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    gap: 25px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.price-card
+{
+    height: 100%;
+    display: flex;
+    width: 450px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    border-top: 2px solid var(--pricing-price-card-bordercolor);
+    border-radius: 0.75rem;
+    flex-shrink: 2;
+}
+
+div#special-price-card
+{
+    flex-shrink: 1;
+}
+
+.price-card .price-title,
+.price-card .price-amount,
+.price-card .price-state,
+.price-card .price-action-btn-container,
+.price-card .price-perks-container
+{
+    padding: 10px;
+}
+
+.price-card .price-title h3
+{
+    font-size: 20px;
+    font-family: "Sora" , sans-serif;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--pricing-price-title-fontcolor);
+}
+
+.price-card .price-amount p
+{
+    font-size: 48px;
+    font-family: "Sora" , sans-serif;
+    font-weight: 500;
+    line-height: 60px;
+    color: var(--pricing-price-amount-fontcolor);
+}
+
+.price-card .price-amount p span
+{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--pricing-price-amount-time-fontcolor);
+}
+
+.price-card .price-state p 
+{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    color: var(--pricing-price-state-fontcolor);
+    font-family: "Sora" , sans-serif;
+}
+
+.price-card .price-action-btn-container,
+.price-card .price-action-btn-container button
+{
+    width:100%;
+    height: 60px;
+}
+
+.price-card .price-action-btn-container button
+{
+    font-size:16px ;
+    font-family: "Sora" , sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--pricing-price-button-fontcolor);
+    background-color: var(--pricing-price-button-bgcolor);
+    border: 2px solid var(--pricing-price-button-bordercolor);
+    border-radius: 0.75rem;
+    transition: all ease-in 0.5s;
+}
+
+.price-card .price-action-btn-container button:hover
+{
+    color: var(--pricing-price-button-fontcolor-hover);
+    background-color: var(--pricing-price-button-bgcolor-hover);
+}
+
+.price-card .price-action-btn-container button.sign-up-btn
+{
+    color: var(--pricing-price-button-fontcolor);
+    background: linear-gradient(to right, var(--pricing-price-signup-btn-gradientcolor-one), var(--pricing-price-signup-btn-gradientcolor-two));
+    border: 2px solid var(--pricing-price-signup-btn-bordercolor);
+    outline: 4px solid transparent;  
+}
+
+.price-card .price-action-btn-container button.sign-up-btn:hover
+{
+    outline: 4px solid var(--pricing-price-signup-btn-outlinecolor-hover);
+    color: var(--pricing-price-signup-btn-fontcolor-hover);
+    background: linear-gradient(to right, var(--pricing-price-signup-btn-bgcolor-hover), var(--pricing-price-signup-btn-bgcolor-hover));
+    border: none;
+}
+
+.price-card .price-perks-container
+{
+    align-self: flex-start;
+    
+}
+
+.price-card .price-perks-container ul
+{
+    list-style-type: none;
+    list-style-image: url("../images/icons8-check-24.png");
+    padding: 30px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.price-card .price-perks-container ul li
+{
+    font-size: 16px;
+    font-family: "Sora" , sans-serif;
+    font-weight: 300;
+    line-height: 24px;
+    color: var(--pricing-price-perks-fontcolor);
+    text-wrap: nowrap;
+}
 
 
 /* -------------------------------------------- MEDIA QUERIES -------------------------------------------- */
@@ -1103,6 +1271,24 @@ header
         height: 300px;
     }
 
+    /* PRICING */
+    .price-card
+    {
+        width: 300px ; 
+        height: auto;
+    }
+
+    .price-perks-container  
+    {
+        padding-bottom: 20px;
+    }
+
+    .price-card .price-perks-container ul li 
+    {
+        text-wrap: nowrap;
+        font-size: 13px;
+    }
+
 }
 
 
@@ -1128,6 +1314,19 @@ header
     .comparison-table .table-side-titles
     {
         display: none;
+    }
+
+    /* PRICING */
+
+    .pricing-card-container
+    {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .price-card
+    {
+        width: 100%;
     }
 }
 
@@ -1465,11 +1664,6 @@ header
         text-wrap: nowrap;
     }
 
-    .subscription-steps
-    {
-        height: 1500px;
-    }
-    
     .steps-container
     {
         padding: 10px;
@@ -1490,6 +1684,23 @@ header
     .step-body .step-description
     {
         padding-right: 30px;
+    }
+
+    /* PRICING */
+    .pricing .price-card .price-amount p
+    {
+        font-size: 2.25rem;
+    }
+
+    .pricing .price-card .price-perks-container
+    {
+        width: 250px;
+    }
+
+    .pricing .price-card .price-perks-container ul li
+    {
+        width: 100%;
+        text-wrap: wrap;
     }
 }
 
@@ -1632,11 +1843,6 @@ header
         font-size: 30px;
         text-wrap: nowrap;
     }
-
-    .subscription-steps
-    {
-        height: 1200px;
-    }
     
     .steps-container
     {
@@ -1665,6 +1871,27 @@ header
     .step-body .step-description
     {
         padding-right: 100px;
+    }
+
+    /* PRICING */
+    .pricing 
+    {
+        padding: 25px;
+    }
+
+    .price-card 
+    {
+        width: 100%;
+    }
+
+    .pricing .price-card .price-amount p
+    {
+        font-size: 1.75rem;
+    }
+
+    .price-card .price-action-btn-container
+    {
+        min-width: 200px;
     }
 }
 
@@ -1702,10 +1929,6 @@ header
     {
         font-size: 13px;
     }
-
-    
-
-    
 }
 
 @media (max-width: 367px) 
@@ -1769,6 +1992,12 @@ header
     .two
     {
         background-position: left;
+    }
+
+    /* PRICING */
+    .price-card .price-perks-container ul
+    {
+        padding: 30px 30px 30px 0px;
     }
 }
 /* xs */

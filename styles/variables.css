@@ -84,4 +84,28 @@
     --subscription-step-title-fontcolor : #FFFFFF;
     --subscription-step-description-fontcolor : #d4d4d4;
 
+    --pricing-bgcolor : #050F13;
+    --pricing-bordercolor : #0A2322 ;
+    --pricing-price-title-fontcolor : #FFFFFF ;
+    --pricing-price-card-bordercolor : #0A2322 ;
+    --pricing-price-amount-fontcolor : #FFFFFF ;
+    --pricing-price-amount-time-fontcolor : #a3a3a3 ;
+    --pricing-price-state-fontcolor : #a3a3a3 ;
+    --pricing-price-button-bgcolor : transparent ;
+    --pricing-price-button-bgcolor-hover : #FFFFFF ;
+    --pricing-price-button-fontcolor : #FFFFFF ;
+    --pricing-price-button-fontcolor-hover : #001314 ;
+    --pricing-price-button-bordercolor : #FFFFFF;
+    --pricing-price-perks-fontcolor : #FFFFFF;
+    --pricing-price-signup-btn-bordercolor : #4BDBC3;
+    --pricing-price-signup-btn-gradientcolor-two : #51B8DE;
+    --pricing-price-signup-btn-gradientcolor-one : #44C6B4;
+    --pricing-price-signup-btn-bgcolor-hover : #FFFFFF;
+    --pricing-price-signup-btn-fontcolor-hover : #001314;
+    --pricing-price-signup-btn-outlinecolor-hover :#1C4279 ;
+
+
+
+
+
 }
