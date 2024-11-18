@@ -17,7 +17,7 @@ body
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 60px;
 }
 
 /* GENERAL STYLES */
@@ -800,7 +800,8 @@ header
     margin-bottom: 20px;
 }
 
-.case-studies .big-title-container h2
+.case-studies .big-title-container h2,
+.subscription-steps .big-title-container h2
 {
     font-family: "Sora" , sans-serif;
     font-weight: 500;
@@ -901,6 +902,126 @@ header
     line-height: 24px;
     color: var(--case-study-content-description-fontcolor );
 }
+
+/* -------------------------------------------- SUBSCRIPTION STEPS -------------------------------------------- */
+
+.subscription-steps
+{
+    width: 100%;
+    height: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.steps-container
+{
+    background-image: url("../images/steps-image.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    border-radius: .75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    padding: 15px 15px 15px 120px ;
+}
+
+.subscription-steps .big-title-container
+{
+    margin-bottom: 20px;
+}
+
+.step-container
+{
+    display: flex;
+    flex-direction: column;
+    /* background-color: white; */
+    width: 600px;
+    height: 150px;
+    /* background-color: #06B6D4; */
+    align-items: flex-start;
+}
+
+.step-header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.step-number h3
+{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    font-family: "Sora" , sans-serif;
+    color: var(--subscription-step-number-fontcolor);
+}
+
+.circle 
+{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background-color: #06B6D4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle img
+{
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+.step-container:last-child .circle 
+{
+    background-color: transparent;
+    border: 2px solid #4B5563;
+}
+
+.step-body
+{
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    width: 400px;
+    padding-left: 55px;
+    gap: 5px;
+}
+
+.step-body h2
+{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    font-family: "Sora" , sans-serif;
+    color: var(--subscription-step-title-fontcolor);
+}
+
+.step-body p
+{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: "Sora" , sans-serif;
+    color: var(--subscription-step-description-fontcolor);
+}
+
+
+
+
 
 /* -------------------------------------------- MEDIA QUERIES -------------------------------------------- */
 
@@ -1188,11 +1309,7 @@ header
     }
 
     /* CASE STUDIES */
-    .case-studies
-    {
-        height: 2000px;
-    }
-
+   
     div.two .case-study-content,
     div.three .case-study-content
     {
@@ -1231,6 +1348,11 @@ header
     }
 
     /* CASE STUDIES */
+    .case-studies
+    {
+        height: auto;
+    }
+
     .case-studies-container
     {
         display: flex;
@@ -1334,6 +1456,40 @@ header
     .case-studies .big-title-container h2 
     {
         font-size: 33px;
+    }
+
+    /* SUBSCRIPTION STEPS */
+    .subscription-steps .big-title-container h2
+    {
+        font-size: 30px;
+        text-wrap: nowrap;
+    }
+
+    .subscription-steps
+    {
+        height: 1500px;
+    }
+    
+    .steps-container
+    {
+        padding: 10px;
+        height: 750px;
+        gap: 30px;
+    }
+
+    .step-container
+    {
+        height: 200px;
+    }
+
+    .step-body
+    {
+        height: 200px;
+    }
+
+    .step-body .step-description
+    {
+        padding-right: 30px;
     }
 }
 
@@ -1469,6 +1625,81 @@ header
         font-size: 23px;
         text-wrap: nowrap;
     }
+
+    /* SUBSCRIPTION STEPS */
+    .subscription-steps .big-title-container h2
+    {
+        font-size: 30px;
+        text-wrap: nowrap;
+    }
+
+    .subscription-steps
+    {
+        height: 1200px;
+    }
+    
+    .steps-container
+    {
+        height: 800px;
+        gap: 20px;
+    }
+
+    .step-container
+    {
+        height: 250px;
+        gap: 10px;
+    }
+    
+    .step-body
+    {
+        padding-left: 10px;
+    }
+
+    .step-body .step-title h2
+    {
+        text-wrap: nowrap;
+    }
+
+    .step-body .step-title,
+    .step-body .step-description
+    {
+        padding-right: 100px;
+    }
+}
+
+@media (max-width: 391px) 
+{
+    /* SUBSCRIPTION STEPS */
+    .subscription-steps .big-title-container h2
+    {
+        font-size: 22px;
+    }
+
+    .step-body
+    {
+        
+        padding-left: 5px;
+        padding-right: 70px;
+    }
+
+    .step-body .step-description
+    {
+        height: 96px;
+    }
+
+    .step-body .step-title h2
+    {
+        font-size: 20px;
+    }
+
+    .step-body .step-description p
+    {
+        font-size: 13px;
+    }
+
+    
+
+    
 }
 
 @media (max-width: 367px) 
@@ -1606,7 +1837,7 @@ header
     /* CASE STUDIES */
     .case-studies
     {
-        height: 2100px
+        height: 1800px
     }
 
     .case-studies-container
@@ -1620,4 +1851,17 @@ header
     {
         padding: 15px;
     }
+
+    /* SUBSCRIPTION STEPS */
+    .steps-container
+    {
+        padding: 15px;
+    }
+
+    .step-body
+    {
+        padding-right: 100px;
+    }
+
+
 }

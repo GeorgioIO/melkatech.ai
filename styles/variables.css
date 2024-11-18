@@ -79,4 +79,9 @@
     --case-study-content-title-fontcolor : #FFFFFF ;
     --case-study-content-description-fontcolor : #d4d4d4 ;
 
+    --subscription-bgcolor : #050F13;
+    --subscription-step-number-fontcolor : #fff9;
+    --subscription-step-title-fontcolor : #FFFFFF;
+    --subscription-step-description-fontcolor : #d4d4d4;
+
 }
