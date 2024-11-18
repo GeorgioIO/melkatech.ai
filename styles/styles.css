@@ -918,6 +918,7 @@ header
     flex-direction: column;
     align-items: flex-start;
     gap: 25px;
+    overflow: hidden;
 }
 
 .steps-container
@@ -946,12 +947,18 @@ header
     display: flex;
     flex-direction: column;
     /* background-color: white; */
-    width: 600px;
+    width: auto;
     height: 150px;
     /* background-color: #06B6D4; */
     align-items: flex-start;
 }
 
+.step-title,
+.step-description,
+.step-body
+{
+    width: auto;
+}
 .step-header
 {
     display: flex;
