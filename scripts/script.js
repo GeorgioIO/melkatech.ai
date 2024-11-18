@@ -2,11 +2,34 @@
 const burgerMenu = document.querySelector(".burger-menu");
 const CloseSidebarButton = document.querySelector(".close-sidebar");
 const switchers = document.querySelectorAll(".switch");
-console.log(switchers)
+const triangles = document.querySelectorAll(".triangle");
 
 // TITLE : EVENT LISTENERS
 burgerMenu.addEventListener("click", toggleSidebar);
 
+
+// -SUB EVENT LISTENERS- HANDLER THE FAQ TOGGLER
+triangles.forEach(triangle => {
+    triangle.addEventListener("click" , (event) => {
+        triangle.classList.toggle("rotate-triangle");
+    
+        const faqParent = event.target.closest(".faq");
+        console.log(faqParent)
+        const faqText = faqParent.querySelector(".faq-text");
+        console.log(faqText)
+        const faqTextState = window.getComputedStyle(faqText).display;
+        console.log(faqTextState)
+    
+        if(faqTextState === "block")
+        {
+            faqText.style.display = "none";
+        }
+        else
+        {
+            faqText.style.display = "block"; 
+        }
+    })
+});
 
 
 // -SUB EVENT LISTENERS- HANDLER TO CLOSE THE SIDEBAR
