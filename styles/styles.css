@@ -1642,6 +1642,7 @@ header
     {
         height: 800px;
         gap: 20px;
+        padding: 25px 15px 15px 15px;
     }
 
     .step-container
@@ -1673,6 +1674,11 @@ header
     .subscription-steps .big-title-container h2
     {
         font-size: 22px;
+    }
+
+    .steps-container
+    {
+        padding-top: 25px;
     }
 
     .step-body
@@ -1855,7 +1861,7 @@ header
     /* SUBSCRIPTION STEPS */
     .steps-container
     {
-        padding: 15px;
+        padding: 25px 15px 15px 15px;
     }
 
     .step-body
