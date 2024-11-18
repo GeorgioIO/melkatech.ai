@@ -1191,6 +1191,89 @@ div#special-price-card
 }
 
 /* -------------------------------------------- FAQs -------------------------------------------- */
+.faqs
+{
+    background-color: var(--pricing-bgcolor);
+    border: 1px solid var(--pricing-bordercolor);
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    border-radius: .75rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+    align-items: flex-start;
+}
+
+.faq
+{
+    width: 50%;
+    padding: 10px;
+}
+.faqs-titles
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.faqs-titles .big-title-container h2
+{
+    text-align: left;
+}
+
+.faqs-container
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.faq-header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.faq-header .faq-title
+{
+    padding-right: 15px;
+}
+
+.faq-header .faq-title h3
+{
+    font-size: 20px;
+    font-family: "Sora" , sans-serif;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--faqs-faq-title-fontcolor);
+}
+
+.faq-text
+{
+    padding: 15px 45px 15px 15px;
+}
+
+.faq-text p
+{
+    text-align: left;
+    font-size: 16px;
+    font-family: "Sora" , sans-serif;
+    line-height: 24px;
+    color: var( --faqs-faq-description-fontcolor);
+    font-weight: 200;
+}
+
+.rotate-triangle
+{
+    animation: rotate 0.1s forwards;
+}
 
 /* -------------------------------------------- MEDIA QUERIES -------------------------------------------- */
 
@@ -1230,6 +1313,12 @@ div#special-price-card
     {
         width: 320px;
         height: 300px;
+    }
+
+    /* FAQs */
+    .faq-header .faq-title h3
+    {
+        font-size: 18px;
     }
 }
 
@@ -1404,6 +1493,12 @@ div#special-price-card
         width: 300px;
         height: 300px;
     }
+
+    /* FAQS */
+    .faqs
+    {
+        padding: 35px;
+    }
 }
 
 @media (max-width: 884px) 
@@ -1520,6 +1615,17 @@ div#special-price-card
     {
         font-size: 0.85rem;
         line-height: 20px;
+    }
+
+    /* FAQS */
+    .faqs-container
+    {
+        flex-direction: column;
+    }
+
+    .faq
+    {
+        width: 100%;
     }
 
 }
@@ -1702,6 +1808,16 @@ div#special-price-card
     {
         width: 100%;
         text-wrap: wrap;
+    }
+
+    .faqs-titles .big-title-container 
+    {
+        padding-left: 15px;
+    }
+
+    .faqs-titles .big-title-container h2
+    {
+        font-size: 42px;
     }
 }
 
@@ -1894,6 +2010,13 @@ div#special-price-card
     {
         min-width: 200px;
     }
+
+    /* FAQS */
+    .faqs
+    {
+        padding: 20px;
+    }
+    
 }
 
 @media (max-width: 391px) 
