@@ -1287,6 +1287,89 @@ div#special-price-card
     animation: rotate 0.1s forwards;
 }
 
+/* -------------------------------------------- BOOKING -------------------------------------------- */
+.booking
+{
+    background-color: var(--booking-bgcolor);
+    border: 1px solid var(--booking-bordercolor);
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    border-radius: .75rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.booking .big-title-container,
+.booking .booking-text-container,
+.booking .book-call-btn-container,
+.booking .booking-subtext-container
+{
+    padding: 10px;
+}
+
+.booking .big-title-container h2
+{
+    line-height: 53px;
+}
+
+.booking-text-container
+{
+    width: 48vw;
+    text-align: center;
+}
+
+.booking-text-container p
+{
+    color: var(--booking-text-fontcolor);
+    font-size: 20px;
+    font-family: "Sora" , sans-serif;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.book-call-btn-container
+{
+    width: 225px;
+    height: 80px;
+    border-radius: 0.75rem;
+}
+
+.book-call-btn-container button
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.75rem;
+    border: none;
+    background: linear-gradient(to right, var(--booking-button-gradientcolor-one), var(--booking-button-gradientcolor-two));
+    font-size:18px ;
+    font-family: "Sora" , sans-serif;
+    font-weight: 500;
+    color: var(--booking-button-fontcolor);
+    outline: 4px solid transparent;  
+    transition: all ease-in-out 0.5s;
+}
+
+.book-call-btn-container button:hover
+{
+    outline: 4px solid var(--booking-button-outlinecolor-hover);
+}
+
+.booking-subtext-container p
+{
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    font-family: "Sora" , sans-serif;
+    color: var(--booking-subtext-fontcolor);
+    text-wrap: nowrap;
+
+}
+
 /* -------------------------------------------- MEDIA QUERIES -------------------------------------------- */
 
 /* 2xl */
@@ -2237,6 +2320,4 @@ div#special-price-card
     {
         padding-right: 100px;
     }
-
-
 }

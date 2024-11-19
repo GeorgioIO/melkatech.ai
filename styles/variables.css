@@ -107,6 +107,16 @@
     --faqs-faq-title-fontcolor : #FFFFFF;
     --faqs-faq-description-fontcolor : #ffffff80;
 
+    --booking-bgcolor : #050F13;
+    --booking-bordercolor : #0A2322 ;
+    --booking-text-fontcolor : #ffffff80 ;
+    --booking-button-fontcolor : #FFFFFF ;
+    --booking-button-gradientcolor-one : #51B8DE;
+    --booking-button-gradientcolor-two : #44C6B4 ;
+    --booking-button-outlinecolor-hover :#1C4279 ;
+    --booking-subtext-fontcolor :#ffffff80 ;
+
+
 
 
 }
