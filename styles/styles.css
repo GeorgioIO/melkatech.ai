@@ -10,6 +10,11 @@
     box-sizing: border-box;
 }
 
+html
+{
+    scroll-behavior: smooth;
+}
+
 body
 {
     background-color: var(--body-bgcolor);
@@ -30,6 +35,11 @@ body
 .testing
 {
     background-color: red;
+}
+
+button:hover
+{
+    cursor: pointer;
 }
 
 /* -------------------------------------------- HEADER + VIEW PRICING BUTTON IN HERO -------------------------------------------- */
@@ -288,13 +298,18 @@ header
     border-radius: .75rem;
     background-color: var(--hero-viewpricing-button-bgcolor);
     border: 3px solid var(--hero-viewpricing-button-bordercolor);
+    outline: 4px solid transparent;  
+    transition: all ease-in-out 0.5s;
+}
+
+.view-pricing-container button a
+{
+    text-decoration: none;
     font-family: "Sora" , sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
     color: var(--hero-viewpricing-button-fontcolor);
-    outline: 4px solid transparent;  
-    transition: all ease-in-out 0.5s;
 }
 /* -------------------------------------------- SOCIAL PROOFS -------------------------------------------- */
 .social-proofs
