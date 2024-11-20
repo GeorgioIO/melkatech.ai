@@ -1369,6 +1369,121 @@ div#special-price-card
     text-wrap: nowrap;
 
 }
+/* -------------------------------------------- FOOTER -------------------------------------------- */
+.footer
+{
+    background-color: var(--footer-bgcolor);
+    border: 1px solid var(--footer-bordercolor);
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    border-radius: .75rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.footer-header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vitruvian-socials-container
+{
+    display: flex;
+    gap: 10px;
+}
+
+.social-container
+{
+    width: 35px;
+    height: 35px;
+}
+
+.social-container a,
+.social-container a img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.footer-body
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+
+.footer-section .footer-section-title h3
+{
+    font-size: 16px;
+    font-family: "Sora" , sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--footer-sections-title-fontcolor);
+}
+
+.footer-section .footer-section-links
+{
+    padding: 10px 0px 10px 0px;
+}
+
+.footer-section .footer-section-links ul
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-section .footer-section-links ul li a
+{
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Sora" , sans-serif ;
+    font-weight: 300;
+    line-height: 24px;
+    color: var(--footer-sections-links-fontcolor);
+}
+
+.footer-section .footer-section-links ul li a:hover
+{
+    color: var(--footer-sections-links-fontcolor-hover);
+}
+
+.footer-foot
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.footer-foot p
+{
+    padding: 10px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    color: var(--footer-foot-text-fontcolor);
+    font-family: "Sora" , sans-serif;
+}
+
+.footer-foot p span
+{
+    font-family: "Koulen" , sans-serif;
+    color: var(--footer-foot-text-vitruvian-fontcolor);
+}
 
 /* -------------------------------------------- MEDIA QUERIES -------------------------------------------- */
 
@@ -1593,6 +1708,12 @@ div#special-price-card
     .faqs
     {
         padding: 35px;
+    }
+
+    /* FOOTER */
+    .footer-body
+    {
+        flex-wrap: wrap;
     }
 }
 
@@ -1918,6 +2039,14 @@ div#special-price-card
     {
         font-size: 42px;
     }
+
+    /* FOOTER */
+    .footer-header
+    {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
 }
 
 /* xs */
@@ -2116,6 +2245,13 @@ div#special-price-card
         padding: 20px;
     }
     
+    /* FOOTER */
+
+    .social-container
+    {
+        width: 30px;
+        height: 30px;
+    }
 }
 
 @media (max-width: 391px) 
@@ -2221,6 +2357,14 @@ div#special-price-card
     .price-card .price-perks-container ul
     {
         padding: 30px 30px 30px 0px;
+    }
+
+    /* FOOTER */
+
+    .social-container
+    {
+        width: 25px;
+        height: 25px;
     }
 }
 /* xs */
