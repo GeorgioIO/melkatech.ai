@@ -1178,6 +1178,7 @@ div#special-price-card
 .price-card .price-perks-container
 {
     align-self: flex-start;
+    width: auto;
     
 }
 
@@ -1581,6 +1582,7 @@ div#special-price-card
     .price-perks-container  
     {
         padding-bottom: 20px;
+        width: auto;
     }
 
     .price-card .price-perks-container ul li 
@@ -2017,7 +2019,7 @@ div#special-price-card
 
     .pricing .price-card .price-perks-container
     {
-        width: 250px;
+        width: auto;
     }
 
     .pricing .price-card .price-perks-container ul li
