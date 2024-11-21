@@ -124,6 +124,21 @@
     --footer-foot-text-fontcolor : #737373;
     --footer-foot-text-vitruvian-fontcolor : #FFFFFF;
 
+    --contact-bgcolor : #050F13;
+    --contact-bordercolor : #0A2322 ;
+    --contact-form-bordercolor : #0A2322 ;
+    --contact-sub-title-fontcolor : #49adc1 ;
+    --contact-title-fontcolor : #FFFFFF ;
+    --contact-description-fontcolor : #ffffff80 ;
+    --contact-button-title-fontcolor : #a3a3a3 ;
+    --contact-button-placeholder-fontcolor : #a3a3a3 ;
+    --contact-button-bordercolor : #0A2322 ;
+    --contact-textarea-bordercolor : #0A2322 ;
+    --contact-button-bordercolor-focus : #49adc1 ;
+    --contact-submit-button-fontcolor: #FFFFFF ;
+    --contact-submit-button-values-gradientcolor-two : #51B8DE;
+    --contact-submit-button-values-gradientcolor-one : #44C6B4;
+
 
 
 }

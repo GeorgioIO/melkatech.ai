@@ -1385,6 +1385,172 @@ div#special-price-card
     text-wrap: nowrap;
 
 }
+
+/* FROM NOW ON STYLES FOR CONTACT*/
+
+.contact
+{
+    background-color: var(--contact-bgcolor);
+    border: 1px solid var(--contact-bordercolor);
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    border-radius: .75rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    font-family: "Sora" , sans-serif;
+}
+
+.contact-form
+{
+    height: auto;
+    border: 1px solid var(--contact-form-bordercolor);
+    padding: 40px;
+    border-radius: .75rem;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form p
+{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: var(--contact-button-title-fontcolor);
+}
+.contact-sub-header,
+.contact-header,
+.contact-description
+{
+    padding: 10px;
+    text-align: center;
+}
+
+.contact-sub-header p
+{
+    font-size:14px ;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--contact-sub-title-fontcolor);
+}
+
+.contact-header h1
+{
+    font-size:60px ;
+    font-weight: 500;
+    line-height: 72px;
+    color: var(--contact-title-fontcolor);
+}
+
+.contact-description
+{
+    width: 50vw;
+    text-align: center;
+}
+
+.contact-description p
+{
+    font-size:16px ;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--contact-description-fontcolor);
+
+}
+
+.personal-information-container
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.personal-information-container div
+{
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.personal-information-container div input.inputs
+{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--contact-button-placeholder-fontcolor);
+    font-family: "Sora" , sans-serif;
+    background-color: transparent;
+    border: 1px solid var(--contact-button-bordercolor);
+    border-radius: 0.75rem;
+}
+
+.personal-information-container div input:focus,
+.question-container textarea:focus
+{
+    border: 3px solid var(--contact-button-bordercolor-focus);
+    outline: none;
+}
+
+
+.question-container
+{
+    width: 100%;
+    height: auto;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.question-container textarea
+{
+    width: 100%;
+    height: 200px;
+    border-radius: 0.75rem;
+    background-color: transparent;
+    border: 1px solid var(--contact-textarea-bordercolor);
+    padding: 20px 10px 10px 20px;
+    font-size: 18px;
+    font-family: "Sora" , sans-serif;
+    font-weight: 500;
+    line-height: 28px;
+    resize: none;
+}
+
+.contact-send-container
+{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+}
+
+.contact-send-container input
+{
+    min-width: 300px;
+    border-radius: .75rem;
+    border: none;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    color: var(--contact-submit-button-fontcolor);
+    font-family: "Sora" , sans-serif;
+    padding: 5px 10px 5px 10px;
+    background: linear-gradient(to right, var(--contact-submit-button-values-gradientcolor-one), var(--contact-submit-button-values-gradientcolor-two));
+}
+
 /* -------------------------------------------- FOOTER -------------------------------------------- */
 .footer
 {
@@ -1761,6 +1927,22 @@ div#special-price-card
         font-size: 0.85rem;
         line-height: 20px;
     }
+
+    /* CONTACT  */
+    .contact
+    {
+        padding: 40px 30px 40px 30px;
+    }
+
+    .contact-header h1
+    {
+        font-size: 48px;
+    }
+
+    .contact-form
+    {
+        width: 100%;
+    }
 }
 
 /* md */
@@ -1923,6 +2105,12 @@ div#special-price-card
     {
         font-size: 36px;
     }
+
+    /* CONTACT */
+    .contact-description 
+    {
+        width: 100%;
+    }
 }
 
 /* sm */
@@ -2063,6 +2251,48 @@ div#special-price-card
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
+    }
+
+    /* CONTACT */
+
+    .personal-information-container
+    {
+        flex-direction: column;
+    }
+
+    .personal-information-container div 
+    {
+        width: 100%;
+    }
+
+    .contact-header h1
+    {
+        font-size: 36px;
+    }
+
+    .contact-send-container input
+    {
+        width: 100%;
+    }
+
+    .contact-send-container
+    {
+
+        padding: 0px;
+    }
+
+    .contact-send-container input
+    {
+        min-width: 100px;
+        border-radius: .75rem;
+        border: none;
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 500;
+        color: var(--contact-submit-button-fontcolor);
+        font-family: "Sora" , sans-serif;
+        padding: 5px 10px 5px 10px;
+        background: linear-gradient(to right, var(--contact-submit-button-values-gradientcolor-one), var(--contact-submit-button-values-gradientcolor-two));
     }
 }
 
@@ -2262,6 +2492,12 @@ div#special-price-card
         padding: 20px;
     }
     
+    /* CONTACT */
+    .contact-header h1
+    {
+        line-height: 44px;
+    }
+
     /* FOOTER */
 
     .social-container
@@ -2304,6 +2540,13 @@ div#special-price-card
     .step-body .step-description p
     {
         font-size: 13px;
+    }
+
+    /* CONTACT */
+  
+    .contact-form
+    {
+        padding: 40px 10px 40px 10px;
     }
 }
 

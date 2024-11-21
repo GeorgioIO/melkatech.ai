@@ -35,7 +35,10 @@ triangles.forEach(triangle => {
 // -SUB EVENT LISTENERS- HANDLER TO CLOSE THE SIDEBAR
 CloseSidebarButton.addEventListener("click" , (event) => {
     const sideBar = document.querySelector(".sidebar");
-
+    if (!sideBar) {
+        console.error("Sidebar element not found!");
+    }
+    
     let sideBarDisplay = window.getComputedStyle(sideBar).display;
 
     if(sideBarDisplay === "flex")
