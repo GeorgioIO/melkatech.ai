@@ -5,6 +5,11 @@
     /* COLORS */
     --body-bgcolor : #000f15;
 
+    /* GENERAL COLORS */
+    --sections-bgcolor : #050F13;
+    --sections-bordercolor : #0A2322;
+    --sections-big-title-fontcolor : #FFFFFF;
+
     --header-bgcolor : #050F13;
     --header-bordercolor : #0A2322;
     --header-mainlogo-fontcolor : rgb(180, 180, 180) ;
@@ -17,6 +22,9 @@
 
     --sidebar-bgcolor :#050F13 ;
     --sidebar-bordercolor :#0A2322 ;
+
+    --control-panel-bgcolor : #ffffffab;
+    --control-panel-bgcolor-hover : #1e495a;
 
     --hero-bgcolor: #050F13 ;
     --hero-bordercolor : #0A2322;
@@ -37,6 +45,7 @@
     --operation-bordercolor : #0A2322;
     --operation-bigtext-fontcolor : #FFFCF9;
     --operation-para-fontcolor : rgb(163, 163, 163);
+    --operation-perkcard-bgcolor : transparent ;
     --operation-perkcard-bordercolor : #0A2322 ;
     --operation-perk-number-bgcolor : #062223;
     --operation-perk-number-fontcolor : #FFFCF9;
@@ -48,6 +57,7 @@
     --services-smalltitle-fontcolor : #FFFFFF;
     --services-bigtitle-fontcolor : #FFFFFF;
     --services-icon-bgcolor : #0D2321;
+    --services-card-bgcolor: transparent;
     --services-card-title-fontcolor : #FFFFFF;
     --services-card-description-fontcolor : #a3a3a3;
     --services-card-bordercolor : #0A2322;
@@ -87,6 +97,7 @@
     --pricing-bgcolor : #050F13;
     --pricing-bordercolor : #0A2322 ;
     --pricing-price-title-fontcolor : #FFFFFF ;
+    --pricing-price-card-bgcolor : transparent;
     --pricing-price-card-bordercolor : #0A2322 ;
     --pricing-price-amount-fontcolor : #FFFFFF ;
     --pricing-price-amount-time-fontcolor : #a3a3a3 ;
@@ -139,6 +150,86 @@
     --contact-submit-button-values-gradientcolor-two : #51B8DE;
     --contact-submit-button-values-gradientcolor-one : #44C6B4;
 
+    
 
+}
 
+[data-theme="light"] 
+{
+        /* COLORS */
+        --body-bgcolor : #f7f7f7;
+
+        /* GENERAL COLORS */
+        --sections-bgcolor : #f7f7f7;
+        --sections-big-title-fontcolor : #050F13;
+    
+        --header-bordercolor : #050F13;
+        --header-mainlogo-fontcolor : #050F13 ;
+        --header-nav-links-fontcolor : #050F13 ;
+        --header-nav-links-fontcolor-hover : #050f1365 ;
+        --header-bookcall-button-fontcolor : #E1E6E7;
+        --header-bookcall-button-bordercolor-hover : #050F13;
+        --header-burger-menu-bgcolor : #050F13 ;
+    
+        --hero-viewpricing-button-fontcolor :#050F13 ;
+        --hero-viewpricing-button-bgcolor : transparent ;
+        --hero-viewpricing-button-bordercolor :#050F13 ;
+        --hero-viewpricing-button-outlinecolor-hover :#FFFFFF ;
+    
+        --past-work-bgcolor : #050F13 ;
+        --past-work-bordercolor : #0A2322;
+    
+        --operation-bordercolor : #050F13;
+        --operation-perkcard-bgcolor : #050F13;
+        --operation-perkcard-bordercolor : #FFFFFF ;
+        --operation-perk-number-bgcolor : #FFFFFF;
+        --operation-perk-number-fontcolor : #050F13;
+    
+        --services-card-title-fontcolor : #FFFFFF;
+        --services-card-description-fontcolor : #a3a3a3;
+        --services-card-bordercolor : #0A2322;
+        --services-card-bgcolor : #0D2321 ;
+    
+        --testimonials-test-text-fontcolor : #0A2322 ;
+        --testimonials-attribution-fontcolor : #0A2322 ;
+        --testimonials-switch-btn-bgcolor : #0A2322 ;
+        --testimonials-switch-btn-bgcolor-active : #56CEEA ;
+    
+        --comparison-table-sidetitles-fontcolor : #0A2322;
+        --comparison-table-headtitles-fontcolor : #0A2322;
+        --comparison-table-values-bgcolor : #0D2321;
+        --comparison-table-values-fontcolor : #FFFFFF;
+
+        --pricing-price-card-bgcolor : #0A2322;
+        --pricing-price-title-fontcolor : #FFFFFF ;
+        --pricing-price-card-bordercolor : #0A2322 ;
+        --pricing-price-amount-fontcolor : #FFFFFF ;
+        --pricing-price-amount-time-fontcolor : #a3a3a3 ;
+        --pricing-price-state-fontcolor : #a3a3a3 ;
+        --pricing-price-button-bgcolor : transparent ;
+        --pricing-price-button-bgcolor-hover : #FFFFFF ;
+        --pricing-price-button-fontcolor : #FFFFFF ;
+        --pricing-price-button-fontcolor-hover : #001314 ;
+        --pricing-price-button-bordercolor : #FFFFFF;
+        --pricing-price-perks-fontcolor : #FFFFFF;
+
+        --faqs-faq-title-fontcolor : #0A2322;
+        --faqs-faq-description-fontcolor : #a3a3a3;
+    
+        --booking-text-fontcolor : #a3a3a3 ;
+        --booking-button-fontcolor : #FFFFFF ;
+        --booking-subtext-fontcolor :#a3a3a3 ;
+    
+        --footer-sections-title-fontcolor : #0A2322 ;
+        --footer-sections-links-fontcolor : #7e7e7e ;
+        --footer-sections-links-fontcolor-hover : #678689 ;
+        --footer-foot-text-fontcolor : #737373;
+        --footer-foot-text-vitruvian-fontcolor : #0A2322;
+    
+        --contact-sub-title-fontcolor : #0A2322 ;
+        --contact-title-fontcolor : #0A2322 ;
+        --contact-description-fontcolor : #0A2322 ;
+        --contact-button-title-fontcolor : #0A2322 ;
+        --contact-button-placeholder-fontcolor : #0A2322 ;
+        --contact-button-bordercolor-focus : #0A2322 ;
 }
