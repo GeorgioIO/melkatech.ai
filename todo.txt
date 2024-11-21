@@ -2,3 +2,8 @@ TODO :
 - fix all links 
 - toggler
 - take to top button
+- check sub-pages with charbel
+- research about how to create a working form
+- tell charbel to make a calendly or calcom meeting links
+- typeform
+- work on toggler animation

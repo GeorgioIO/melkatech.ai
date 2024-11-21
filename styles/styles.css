@@ -565,7 +565,7 @@ header
     height: 400px;
     flex-wrap: wrap;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     gap: 30px;
 }
 
@@ -578,12 +578,6 @@ header
     height: 250px;
     padding: 20px;
     gap: 20px;
-    border-top: 2px solid var(--services-card-bordercolor);
-    border-bottom: 2px solid var(--services-card-bordercolor);
-    border-top-left-radius: 0.75rem ;
-    border-top-right-radius: 0.75rem ;
-    border-bottom-left-radius: 0.75rem ;
-    border-bottom-right-radius: 0.75rem ;
     background-color: var(--services-card-bgcolor);
 }
 
@@ -624,8 +618,8 @@ header
 .service-card .service-card-description-container
 {
     min-width: 150px;
-    min-height: 200px;
-    padding-left: 40px;
+    height: auto;
+    padding: 10px 10px 10px 40px;
 }
 
 .service-card .service-card-description-container p
