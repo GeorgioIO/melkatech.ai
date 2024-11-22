@@ -489,7 +489,7 @@ header
     background-color: var(--sections-bgcolor);
     border: 1px solid var(--services-bordercolor);
     width: 100%;
-    height: 850px;
+    height: auto;
     padding: 40px;
     border-radius: .75rem;
     margin-right: auto;
@@ -562,7 +562,7 @@ header
 .services-container
 {
     width: 100%;
-    height: 400px;
+    height: auto;
     flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
@@ -575,7 +575,7 @@ header
     flex-direction: column;
     justify-content: flex-start;
     max-width: 400px;
-    height: 250px;
+    height: auto;
     padding: 20px;
     gap: 20px;
     background-color: var(--services-card-bgcolor);
@@ -619,7 +619,7 @@ header
 {
     min-width: 150px;
     height: auto;
-    padding: 10px 10px 10px 40px;
+    padding: 10px 10px 5px 40px;
 }
 
 .service-card .service-card-description-container p
@@ -738,7 +738,7 @@ header
 {
     border: 1px solid var(--sections-bordercolor);
     width: 100%;
-    height: 800px;
+    height: auto;
     padding: 50px;
     border-radius: .75rem;
     margin-right: auto;
@@ -769,13 +769,18 @@ header
 .comparison-table
 {
     width: 100%;
-    height: 100%;
+    height: auto;
     border-collapse: collapse;
 }
 
 .comparison-table thead td
 {
     text-align: center;
+}
+
+.comparison-table tr
+{
+    height: 85px;
 }
 
 .comparison-table th,
@@ -805,11 +810,13 @@ header
 .comparison-table th
 {
     border-top: 1px solid var(--comparison-table-row-bordercolor);
+    height: auto;
 }
 
 .comparison-table .table-values
 {
     text-align: center;
+    
 }
 
 .comparison-table .table-values p
@@ -1711,37 +1718,27 @@ div#special-price-card
 
     /* SERVICES */
 
-    .services
-    {
-        height: 900px;
-    }
-
     .service-card
     {
-        width: 350px;
+        width: 100%;
         height: 300px;
-    }
+    } 
 
 }
 
-@media (max-width: 1302px) 
+@media (max-width: 1419px) 
 {
-    .services
+    /* SERVICES */
+    .services-container
     {
-        height: 900px;
+        justify-content: space-around;
     }
 
     .service-card
     {
         width: 320px;
-        height: 300px;
-    }
+    } 
 
-    /* FAQs */
-    .faq-header .faq-title h3
-    {
-        font-size: 18px;
-    }
 }
 
 
@@ -1772,16 +1769,11 @@ div#special-price-card
     }
 
     /* SERVICES */
-    .services
-    {
-        height: 900px;
-    }
 
     .service-card
     {
         width: 280px;
-        height: 300px;
-    }
+    } 
 
     /* PRICING */
     .price-card
@@ -1808,16 +1800,11 @@ div#special-price-card
 @media (max-width: 1059px) 
 {
     /* SERVICES */
-    .services
-    {
-        height: 1200px;
-    }
-
     .service-card
     {
         width: 400px;
         height: 300px;
-    }
+    } 
 
     /* COMPARISON */
     td#freelance-title,
@@ -1891,18 +1878,25 @@ div#special-price-card
 
     .operation
     {
-        height: 1100px;
+        height: auto;
     }
     .operation-perks-container
     {
         gap: 25px;
         flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .operation-perks-container .perk-card
+    {
+        width: 45%;
+        height: auto;
     }
 
     .operation-perks-container .perk-card:nth-child(3)
     {
-        width: 525px;
-        height: 260px;
+        width: 100%;
+        height: auto;
     }
 
     .operation .big-title-container h2
@@ -1911,10 +1905,13 @@ div#special-price-card
     }
 
     /* SERVICES */
+    /* .services-container
+    {
+        flex-direction: column;
+    } */
     .service-card
     {
-        width: 300px;
-        height: 300px;
+        width: 350px;
     }
 
     /* FAQS */
@@ -1930,7 +1927,7 @@ div#special-price-card
     }
 }
 
-@media (max-width: 884px) 
+@media (max-width: 888px) 
 {
     /* OPERATION */
 
@@ -1973,6 +1970,12 @@ div#special-price-card
     {
         width: 100%;
     }
+
+    /* SERVICES */
+    .service-card
+    {
+        width: 300px;
+    }
 }
 
 /* md */
@@ -2002,7 +2005,7 @@ div#special-price-card
     /* OPERATION */
     .operation
     {
-        height: 1700px;
+        height: auto;
     }
 
     .operation .big-title-container h2
@@ -2012,28 +2015,12 @@ div#special-price-card
         line-height: 38px;
     }
 
-    .operation-perks-container
-    {
-        flex-direction: column;
-    }
-
-    .perk-card,
-    .operation-perks-container .perk-card:nth-child(3)
-    {
-        width: 300px;
-        height: 400px;
-    }
-
     /* SERVICES */
-    .services
-    {
-        height: 1300px;
-    }
 
     .service-card
     {
-        width: 270px;
-        height: 330px;
+        width: 280px;
+        
     }
 
     /* TESTIMONIALS */
@@ -2076,20 +2063,36 @@ div#special-price-card
 }
 @media (max-width: 727px) 
 {
-    /* SERVICES */
-    .services
+
+    /* OPERATION */
+    .operation-perks-container
     {
-        height: 1900px;
+        flex-direction: column;
     }
 
+    .operation-perks-container .perk-card
+    {
+        width: 100%; 
+    }
+
+    /* SERVICES */
     .services .big-title-container h2
     {
         font-size: 40px;
     }
-    .service-card
+
+    .services-container
     {
         width: 100%;
-        height: 250px;
+        justify-content: stretch;
+        align-items: stretch;
+    }
+
+    .service-card
+    {
+        min-width: 100%;
+        height: 300px;
+        
     }
 
     /* TESTIMONIALS */
@@ -2141,6 +2144,8 @@ div#special-price-card
     {
         width: 100%;
     }
+
+    
 }
 
 /* sm */
@@ -2172,10 +2177,6 @@ div#special-price-card
     }
 
     /* SERVICES */
-    .services
-    {
-        height: 2450px;
-    }
 
     .services .big-title-container h2
     {
@@ -2187,10 +2188,7 @@ div#special-price-card
         font-size: 16px;
     }
 
-    .service-card
-    {
-        height: 340px;
-    }
+ 
 
     /* TESTIMONIALS */
     .testimonials
@@ -2351,27 +2349,16 @@ div#special-price-card
 
     /* OPERATION */
 
-    .operation
-    {
-        height: 1900px;
-    }
-
     .operation-container
     {
         align-items: center;
     }
-    .perk-card,
-    .operation-perks-container .perk-card:nth-child(3)
-    {
-        width: 220px;
-        height: 400px;
-    }
+
 
     /* SERVICES */
     
     .services
     {
-        height: 2000px;
         padding: 20px;
     }
 
@@ -2583,14 +2570,9 @@ div#special-price-card
 @media (max-width: 367px) 
 {
     /* SERVICES */
-    .services
-    {
-        height: 2350px;
-    }
-
-    .service-card
-    {
-        height: 320px;
+    .service-card .service-card-description-container 
+    {   
+        padding: 10px;
     }
 
     /* TESTIMONIALS */
@@ -2678,22 +2660,14 @@ div#special-price-card
     }
 
     /* OPERATION */
-    .perk-card,
-    .operation-perks-container .perk-card:nth-child(3)
+    .operation-perks-container
     {
-        width: 190px;
-        height: 400px;
+        padding: 10px;
     }
-
     /* SERVICES */
-    .services
-    {
-        height: 2850px;
-    }
-
     .service-card
     {
-        height: 400px;
+        height: auto;
     }
 
     .service-card .service-card-description-container
@@ -2704,7 +2678,7 @@ div#special-price-card
     /* COMPARISON */
     .comparison
     {
-        padding: 20px;
+        padding: 10px;
     }
 
     .comparison .big-title-container h2
