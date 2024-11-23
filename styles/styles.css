@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Koulen&family=Sora:wght@100..800&display=swap');
 
-/* -------------------------------------------- GLOBAL RESET -------------------------------------------- */
+/* GLOBAL RESET */
 
 *
 {
@@ -37,6 +37,8 @@ button:hover
     cursor: pointer;
 }
 
+
+
 /* ANIMATIONS */
 
 @keyframes rotate {
@@ -48,7 +50,7 @@ button:hover
     }
   }
 
-/* -------------------------------------------- HEADER + VIEW PRICING BUTTON IN HERO -------------------------------------------- */
+/* HEADER + VIEW PRICING BUTTON IN HERO */
 
 header
 {
@@ -150,7 +152,7 @@ header
     display: none;
     
 }
-/* -------------------------------------------- SIDEBAR -------------------------------------------- */
+/* SIDEBAR */
 
 .sidebar
 {
@@ -209,7 +211,7 @@ header
     font-family: "Sora" , sans-serif;
 }
 
-/* -------------------------------------------- CONTROL PANEL -------------------------------------------- */
+/* CONTROL PANEL */
 
 .control-panel
 {
@@ -255,7 +257,7 @@ header
     display: none;
 }
 
-/* -------------------------------------------- HERO -------------------------------------------- */
+/* HERO */
 .hero
 {
     background-color: var(--sections-bgcolor);
@@ -363,7 +365,7 @@ header
     line-height: 28px;
     color: var(--hero-viewpricing-button-fontcolor);
 }
-/* -------------------------------------------- SOCIAL PROOFS -------------------------------------------- */
+/* SOCIAL PROOFS */
 .social-proofs
 {
     background-color: var(--sections-bgcolor);
@@ -391,7 +393,7 @@ header
     height: 100%;
 }
 
-/* -------------------------------------------- OPERATION PERKS -------------------------------------------- */
+/* OPERATION PERKS */
 
 
 .operation
@@ -502,7 +504,7 @@ header
     color: var(--operation-perk-description-fontcolor);
 }
 
-/* -------------------------------------------- SERVICES -------------------------------------------- */
+/* SERVICES */
 .services
 {
     background-color: var(--sections-bgcolor);
@@ -649,7 +651,7 @@ header
     font-family: "Sora" , sans-serif;
     color: var(--services-card-description-fontcolor);
 }
-/* -------------------------------------------- TESTIMONIALS -------------------------------------------- */
+/* TESTIMONIALS */
 .testimonials
 {
     border: 1px solid var(--sections-bordercolor);
@@ -751,7 +753,7 @@ header
     background-color: var(--testimonials-switch-btn-bgcolor-active);
 }
 
-/* -------------------------------------------- COMPARISON -------------------------------------------- */
+/* COMPARISON */
 
 .comparison
 {
@@ -857,7 +859,7 @@ header
     background: linear-gradient(to right, var(--comparison-table-vitruvian-values-gradientcolor-one), var(--comparison-table-vitruvian-values-gradientcolor-two));
 }
 
-/* -------------------------------------------- CASE STUDIES -------------------------------------------- */
+/* CASE STUDIES */
 
 .case-studies
 {
@@ -981,7 +983,7 @@ header
     color: var(--case-study-content-description-fontcolor );
 }
 
-/* -------------------------------------------- SUBSCRIPTION STEPS -------------------------------------------- */
+/* SUBSCRIPTION STEPS */
 
 .subscription-steps
 {
@@ -1104,7 +1106,7 @@ header
     color: var(--subscription-step-description-fontcolor);
 }
 
-/* -------------------------------------------- PRICING -------------------------------------------- */
+/* PRICING */
 
 .pricing
 {
@@ -1274,7 +1276,7 @@ div#special-price-card
     text-wrap: nowrap;
 }
 
-/* -------------------------------------------- FAQs -------------------------------------------- */
+/* FAQs */
 .faqs
 {
     background-color: var(--sections-bgcolor);
@@ -1359,7 +1361,7 @@ div#special-price-card
     animation: rotate 0.1s forwards;
 }
 
-/* -------------------------------------------- BOOKING -------------------------------------------- */
+/* BOOKING */
 .booking
 {
     background-color: var(--sections-bgcolor);
@@ -1607,7 +1609,7 @@ div#special-price-card
     background: linear-gradient(to right, var(--contact-submit-button-values-gradientcolor-one), var(--contact-submit-button-values-gradientcolor-two));
 }
 
-/* -------------------------------------------- FOOTER -------------------------------------------- */
+/* FOOTER */
 .footer
 {
     background-color: var(--sections-bgcolor);
@@ -1723,7 +1725,7 @@ div#special-price-card
     color: var(--footer-foot-text-vitruvian-fontcolor);
 }
 
-/* -------------------------------------------- MEDIA QUERIES -------------------------------------------- */
+/* MEDIA QUERIES */
 
 /* 2xl */
 @media (max-width: 1536px) 
