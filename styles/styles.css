@@ -42,10 +42,7 @@ button:hover
     cursor: pointer;
 }
 
-.moon-to-left
-{
-    animation: moveMoonAndSun 1s forwards;
-}
+
 
 /* -------------------------------------------- HEADER + VIEW PRICING BUTTON IN HERO -------------------------------------------- */
 
