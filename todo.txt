@@ -1,9 +1,30 @@
 TODO :
-- fix all links 
-- toggler
-- take to top button
-- check sub-pages with charbel
-- research about how to create a working form
-- tell charbel to make a calendly or calcom meeting links
+- fix all links ---- POST MEETING WITH C 
+- toggler ---- DONE
+- take to top button ---- DONE
+- research about how to create a working form ---- POST MEETING WITH C
+- tell charbel to make a calendly or calcom meeting links 
 - typeform
-- work on toggler animation
+
+
+ON MEETING WITH CHARBEL :
+- ASK ABOUT SUB-PAGES :
+    - Content-marketing
+    - Print-on-demand
+    - Conversation Rate Optimization
+
+    - Done-for-you systems
+    - Careers
+
+    - Privacy & policy
+    - terms & condition
+
+- TALK ABOUT TYPEFORM , SHOW HIM THE WORKING VERSION ON THE LOCAL REPO
+
+
+FREE LANCING TOPICS :
+    - Discuss with him if its better to approach prospects as a freelancer or as a member
+    - Discuss with him pricing and how i will price websites in the future
+    - Discuss with him hosting and how it works
+    - Discuss with him the integration of ai automation with web development in product packages
+    - Discuss with him what to name my web dev brand
