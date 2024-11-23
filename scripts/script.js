@@ -5,17 +5,23 @@ const switchers = document.querySelectorAll(".switch");
 const triangles = document.querySelectorAll(".triangle");
 const togglerImage = document.querySelector(".toggler")
 const upToggler = document.querySelector(".up")
+const homeToggler = document.querySelector(".home")
 
 // TITLE : EVENT LISTENERS
 burgerMenu.addEventListener("click", toggleSidebar);
 
 
 // -SUB EVENT LISTENERS- HANDLE THE UP TOGGLER
-upToggler.addEventListener("click" , (event) => {
+upToggler.addEventListener("click" , () => {
     window.scroll({
         top : 0,
         behavior : 'smooth'
     });
+});
+
+// -SUB EVENT LISTENERS- HANDLE THE HOME TOGGLER
+homeToggler.addEventListener("click" , () => {
+    window.location.href = "index.html"
 });
 
 // -SUB EVENT LISTENERS- HANDLE THE THEME TOGGLER 
