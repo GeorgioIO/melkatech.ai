@@ -25,22 +25,33 @@ togglerImage.addEventListener("click" , (event) => {
     
     if(imageSrc === "./images/icons8-moon-50.png")
     {
-        event.target.setAttribute("src" , "./images/icons8-sun-30.png");
-        document.documentElement.setAttribute('data-theme', "light");
-        socialProofs.forEach(image => {
-            const imageDataName = image.getAttribute("data-name");
-            toggleSocialProofsDark(image , imageDataName);
-        });
+        event.target.classList.add("moon-to-left");
+
+        setTimeout(() => {
+            event.target.setAttribute("src" , "./images/icons8-sun-30.png");
+            event.target.classList.remove("moon-to-left");
+            document.documentElement.setAttribute('data-theme', "light");
+            
+            socialProofs.forEach(image => {
+                const imageDataName = image.getAttribute("data-name");
+                toggleSocialProofsDark(image , imageDataName);
+        })
+        }, 900);
     }
     else
     {
-        event.target.setAttribute("src" , "./images/icons8-moon-50.png");
-        document.documentElement.setAttribute('data-theme', "dark");
-        socialProofs.forEach(image => {
-            const imageDataName = image.getAttribute("data-name");
-            toggleSocialProofsLight(image , imageDataName);
-        });
+        event.target.classList.add("moon-to-left");
 
+        setTimeout(() => {
+            event.target.setAttribute("src" , "./images/icons8-moon-50.png");
+            event.target.classList.remove("moon-to-left");
+            document.documentElement.setAttribute('data-theme', "dark");
+            
+            socialProofs.forEach(image => {
+                const imageDataName = image.getAttribute("data-name");
+                toggleSocialProofsLight(image , imageDataName);
+            });
+        }, 900);
     }
 });
 
