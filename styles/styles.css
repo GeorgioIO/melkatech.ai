@@ -435,6 +435,8 @@ header
 .operation-perks-container
 {
     display: flex;
+    width: 100%;
+    justify-content: space-between;
     gap: 90px;
 }
 
