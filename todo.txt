@@ -1,3 +1,6 @@
 TODO :
-- start working on back-end
+- contact form
+- sub-pages
+- change logo
 
+ggg
