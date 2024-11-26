@@ -1600,6 +1600,46 @@ div#special-price-card
     background: linear-gradient(to right, var(--contact-submit-button-values-gradientcolor-one), var(--contact-submit-button-values-gradientcolor-two));
 }
 
+/* SUCCESS */
+
+.success
+{
+    background-color: var(--sections-bgcolor);
+    border: 1px solid var(--footer-bordercolor);
+    width: 100%;
+    height: auto;
+    border-radius: .75rem;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.success-header,
+.success-description
+{
+    padding: 10px;
+}
+
+.success-header h2
+{
+    color: var(--success-header-fontcolor);
+    font-family: "Sora" , sans-serif;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 52px;
+}
+
+.success-description p
+{
+    color: var(--success-description-fontcolor);
+    font-family: "Sora" , sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
 /* FOOTER */
 .footer
 {
@@ -1987,6 +2027,12 @@ div#special-price-card
     .service-card
     {
         width: 300px;
+    }
+
+    /* SUCCESS */
+    .success-header h2
+    {
+        font-size: 30px;
     }
 }
 
@@ -2533,6 +2579,13 @@ div#special-price-card
     {
         width: 30px;
         height: 30px;
+    }
+
+    /* SUCCESS */
+    .success-header h2
+    {
+        font-size: 24px;
+        line-height: 30px;
     }
 }
 

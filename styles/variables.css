@@ -150,7 +150,8 @@
     --contact-submit-button-values-gradientcolor-two : #51B8DE;
     --contact-submit-button-values-gradientcolor-one : #44C6B4;
 
-    
+    --success-header-fontcolor : #FFFFFF;
+    --success-description-fontcolor : #FFFFFF;
 
 }
 
@@ -232,4 +233,7 @@
         --contact-button-title-fontcolor : #0A2322 ;
         --contact-button-placeholder-fontcolor : #0A2322 ;
         --contact-button-bordercolor-focus : #0A2322 ;
-}
+
+        --success-header-fontcolor : #0A2322;
+        --success-description-fontcolor : #0A2322;
+}   
