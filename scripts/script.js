@@ -28,7 +28,8 @@ homeToggler.addEventListener("click" , () => {
 togglerImage.addEventListener("click" , (event) => {
     let imageSrc = event.target.getAttribute("src");
     const socialProofs = document.querySelectorAll(".past-work-logo-container img");
-    
+    const logoImages = document.querySelectorAll("#main-logo-image");  
+    console.table(logoImages)
     if(imageSrc === "./images/icons8-moon-50.png")
     {
         event.target.setAttribute("src" , "./images/icons8-sun-30.png");
@@ -37,6 +38,10 @@ togglerImage.addEventListener("click" , (event) => {
         socialProofs.forEach(image => {
             const imageDataName = image.getAttribute("data-name");
             toggleSocialProofsDark(image , imageDataName);
+        })
+
+        logoImages.forEach(image => {
+            image.setAttribute("src" , "./images/melka-logo-black-200-150.png")
         })
     }
     else
@@ -48,6 +53,10 @@ togglerImage.addEventListener("click" , (event) => {
             const imageDataName = image.getAttribute("data-name");
             toggleSocialProofsLight(image , imageDataName);
         });
+
+        logoImages.forEach(image => {
+            image.setAttribute("src" , "./images/melka-logo-white-200-150.png")
+        })
         
     }
 });
