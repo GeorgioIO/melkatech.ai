@@ -3,14 +3,19 @@
 :root
 {
     /* COLORS */
-    --body-bgcolor : #000f15;
+    /* dark-puprle : #0c0413 */
+    /* dark-puprle shade 2 : #0c0511 */
+    /* dark-puprle shade 3 : #050107 */
+    /* dark-puprle from their website : #050F13 */
+    --body-bgcolor : #050107;
+    
 
     /* GENERAL COLORS */
-    --sections-bgcolor : #050F13;
+    --sections-bgcolor : #050107;
     --sections-bordercolor : #0A2322;
     --sections-big-title-fontcolor : #FFFFFF;
 
-    --header-bgcolor : #050F13;
+    --header-bgcolor : #050107;
     --header-bordercolor : #0A2322;
     --header-mainlogo-fontcolor : rgb(180, 180, 180) ;
     --header-nav-links-fontcolor : #69B8C7 ;
@@ -20,13 +25,13 @@
     --header-burger-menu-bgcolor : #5ec5da ;
     --header-burger-menu-line-bgcolor : white;
 
-    --sidebar-bgcolor :#050F13 ;
+    --sidebar-bgcolor :#050107 ;
     --sidebar-bordercolor :#0A2322 ;
 
     --control-panel-bgcolor : #ffffffab;
     --control-panel-bgcolor-hover : #1e495a;
 
-    --hero-bgcolor: #050F13 ;
+    --hero-bgcolor: #050107 ;
     --hero-bordercolor : #0A2322;
     --hero-title-fontcolor : #FFFCF9 ;
     --hero-title-bgcolor : #052021 ;
@@ -38,10 +43,10 @@
     --hero-viewpricing-button-bordercolor :#FFFFFF ;
     --hero-viewpricing-button-outlinecolor-hover :#1C4279 ;
 
-    --past-work-bgcolor : #050F13 ;
+    --past-work-bgcolor : #050107 ;
     --past-work-bordercolor : #0A2322;
 
-    --operation-bgcolor : #050F13;
+    --operation-bgcolor : #050107;
     --operation-bordercolor : #0A2322;
     --operation-bigtext-fontcolor : #FFFCF9;
     --operation-para-fontcolor : rgb(163, 163, 163);
@@ -52,7 +57,7 @@
     --operation-perk-title-fontcolor : #FFFCF9;
     --operation-perk-description-fontcolor : #a3a3a3;
 
-    --services-bgcolor : #050F13;
+    --services-bgcolor : #050107;
     --services-bordercolor : #0A2322;
     --services-smalltitle-fontcolor : #FFFFFF;
     --services-bigtitle-fontcolor : #FFFFFF;
@@ -62,7 +67,7 @@
     --services-card-description-fontcolor : #a3a3a3;
     --services-card-bordercolor : #0A2322;
 
-    --testimonials-bgcolor :#050F13 ;
+    --testimonials-bgcolor :#050107 ;
     --testimonials-bordercolor : #0A2322;
     --testimonials-smalltitle-fontcolor :#FFFFFF;
     --testimonials-test-text-fontcolor : #FFFFFF ;
@@ -71,7 +76,7 @@
     --testimonials-switch-btn-bgcolor : #E5E5E5 ;
     --testimonials-switch-btn-bgcolor-active : #56CEEA ;
 
-    --comparison-bgcolor : #050F13 ;
+    --comparison-bgcolor : #050107 ;
     --comparison-bordercolor : #0A2322 ;
     --comparison-smalltitle-fontcolor : #FFFFFF;
     --comparison-bigtitle-fontcolor : #FFFFFF;
@@ -83,18 +88,18 @@
     --comparison-table-vitruvian-values-gradientcolor-two : #51B8DE;
     --comparison-table-vitruvian-values-gradientcolor-one : #44C6B4;
 
-    --case-studies-bgcolor : #050F13 ;
+    --case-studies-bgcolor : #050107 ;
     --case-studies-bigtitle-fontcolor : #FFFFFF;
     --case-study-content-bgcolor : #0511128e;
     --case-study-content-title-fontcolor : #FFFFFF ;
     --case-study-content-description-fontcolor : #d4d4d4 ;
 
-    --subscription-bgcolor : #050F13;
+    --subscription-bgcolor : #050107;
     --subscription-step-number-fontcolor : #fff9;
     --subscription-step-title-fontcolor : #FFFFFF;
     --subscription-step-description-fontcolor : #d4d4d4;
 
-    --pricing-bgcolor : #050F13;
+    --pricing-bgcolor : #050107;
     --pricing-bordercolor : #0A2322 ;
     --pricing-price-title-fontcolor : #FFFFFF ;
     --pricing-price-card-bgcolor : transparent;
@@ -118,7 +123,7 @@
     --faqs-faq-title-fontcolor : #FFFFFF;
     --faqs-faq-description-fontcolor : #ffffff80;
 
-    --booking-bgcolor : #050F13;
+    --booking-bgcolor : #050107;
     --booking-bordercolor : #0A2322 ;
     --booking-text-fontcolor : #ffffff80 ;
     --booking-button-fontcolor : #FFFFFF ;
@@ -127,7 +132,7 @@
     --booking-button-outlinecolor-hover :#1C4279 ;
     --booking-subtext-fontcolor :#ffffff80 ;
 
-    --footer-bgcolor : #050F13;
+    --footer-bgcolor : #050107;
     --footer-bordercolor : #0A2322 ;
     --footer-sections-title-fontcolor : #FFFFFF ;
     --footer-sections-links-fontcolor : #afa9a975 ;
@@ -135,7 +140,7 @@
     --footer-foot-text-fontcolor : #737373;
     --footer-foot-text-vitruvian-fontcolor : #FFFFFF;
 
-    --contact-bgcolor : #050F13;
+    --contact-bgcolor : #050107;
     --contact-bordercolor : #0A2322 ;
     --contact-form-bordercolor : #0A2322 ;
     --contact-sub-title-fontcolor : #49adc1 ;
@@ -162,29 +167,29 @@
 
         /* GENERAL COLORS */
         --sections-bgcolor : #f7f7f7;
-        --sections-big-title-fontcolor : #050F13;
+        --sections-big-title-fontcolor : #050107;
     
-        --header-bordercolor : #050F13;
-        --header-mainlogo-fontcolor : #050F13 ;
-        --header-nav-links-fontcolor : #050F13 ;
-        --header-nav-links-fontcolor-hover : #050f1365 ;
+        --header-bordercolor : #050107;
+        --header-mainlogo-fontcolor : #050107 ;
+        --header-nav-links-fontcolor : #050107 ;
+        --header-nav-links-fontcolor-hover : #050107;
         --header-bookcall-button-fontcolor : #E1E6E7;
-        --header-bookcall-button-bordercolor-hover : #050F13;
-        --header-burger-menu-bgcolor : #050F13 ;
+        --header-bookcall-button-bordercolor-hover : #050107;
+        --header-burger-menu-bgcolor : #050107 ;
     
-        --hero-viewpricing-button-fontcolor :#050F13 ;
+        --hero-viewpricing-button-fontcolor :#050107 ;
         --hero-viewpricing-button-bgcolor : transparent ;
-        --hero-viewpricing-button-bordercolor :#050F13 ;
+        --hero-viewpricing-button-bordercolor :#050107 ;
         --hero-viewpricing-button-outlinecolor-hover :#FFFFFF ;
     
-        --past-work-bgcolor : #050F13 ;
+        --past-work-bgcolor : #050107 ;
         --past-work-bordercolor : #0A2322;
     
-        --operation-bordercolor : #050F13;
-        --operation-perkcard-bgcolor : #050F13;
+        --operation-bordercolor : #050107;
+        --operation-perkcard-bgcolor : #050107;
         --operation-perkcard-bordercolor : #FFFFFF ;
         --operation-perk-number-bgcolor : #FFFFFF;
-        --operation-perk-number-fontcolor : #050F13;
+        --operation-perk-number-fontcolor : #050107;
     
         --services-card-title-fontcolor : #FFFFFF;
         --services-card-description-fontcolor : #a3a3a3;
