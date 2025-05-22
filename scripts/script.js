@@ -3,7 +3,6 @@ const burgerMenu = document.querySelector(".burger-menu");
 const CloseSidebarButton = document.querySelector(".close-sidebar");
 const switchers = document.querySelectorAll(".switch");
 const triangles = document.querySelectorAll(".triangle");
-const togglerImage = document.querySelector(".toggler")
 const upToggler = document.querySelector(".up")
 const homeToggler = document.querySelector(".home")
 
@@ -22,43 +21,6 @@ upToggler.addEventListener("click" , () => {
 // -SUB EVENT LISTENERS- HANDLE THE HOME TOGGLER
 homeToggler.addEventListener("click" , () => {
     window.location.href = "index.html"
-});
-
-// -SUB EVENT LISTENERS- HANDLE THE THEME TOGGLER 
-togglerImage.addEventListener("click" , (event) => {
-    let imageSrc = event.target.getAttribute("src");
-    const socialProofs = document.querySelectorAll(".past-work-logo-container img");
-    const logoImages = document.querySelectorAll("#main-logo-image");  
-    console.table(logoImages)
-    if(imageSrc === "./images/icons8-moon-50.png")
-    {
-        event.target.setAttribute("src" , "./images/icons8-sun-30.png");
-        document.documentElement.setAttribute('data-theme', "light");
-            
-        socialProofs.forEach(image => {
-            const imageDataName = image.getAttribute("data-name");
-            toggleSocialProofsDark(image , imageDataName);
-        })
-
-        logoImages.forEach(image => {
-            image.setAttribute("src" , "./images/melka-logo-black-200-150.png")
-        })
-    }
-    else
-    {
-        event.target.setAttribute("src" , "./images/icons8-moon-50.png");
-        document.documentElement.setAttribute('data-theme', "dark");
-        
-        socialProofs.forEach(image => {
-            const imageDataName = image.getAttribute("data-name");
-            toggleSocialProofsLight(image , imageDataName);
-        });
-
-        logoImages.forEach(image => {
-            image.setAttribute("src" , "./images/melka-logo-white-200-150.png")
-        })
-        
-    }
 });
 
 
@@ -113,57 +75,6 @@ switchers.forEach(switcher => {
 });
 
 // TITLE : FUNCTIONS
-
-// -SUB FUNCTION- FUNCTION TO CHANGE SOCIAL PROOFS URL
-function toggleSocialProofsDark(image , imageName)
-{
-    switch (imageName)
-    {
-        case "cai":
-            image.setAttribute("src" , "./images/icons8-character-ai-50-dark.png");
-            break;
-        case "paradox":
-            image.setAttribute("src" , "./images/icons8-paradox-ai-50-dark.png");
-            break;
-        case "otter":
-            image.setAttribute("src" , "./images/icons8-otter-ai-50-dark.png");
-            break;
-        case "candy":
-            image.setAttribute("src" , "./images/icons8-candy-ai-50-dark.png");
-            break;
-        case "perplexity":
-            image.setAttribute("src" , "./images/icons8-perplexity-ai-50-dark.png");
-            break;
-        case "invedio":
-            image.setAttribute("src" , "./images/icons8-invideo-ai-50-dark.png");
-            break;
-    }
-}
-
-function toggleSocialProofsLight(image , imageName)
-{
-    switch (imageName)
-    {
-        case "cai":
-            image.setAttribute("src" , "./images/social-proof-1.png");
-            break;
-        case "paradox":
-            image.setAttribute("src" , "./images/social-proof-2.png");
-            break;
-        case "otter":
-            image.setAttribute("src" , "./images/social-proof-3.png");
-            break;
-        case "candy":
-            image.setAttribute("src" , "./images/social-proof-4.png");
-            break;
-        case "perplexity":
-            image.setAttribute("src" , "./images/social-proof-5.png");
-            break;
-        case "invedio":
-            image.setAttribute("src" , "./images/social-proof-6.png");
-            break;
-    }
-}
 
 // -SUB FUNCTION- FUNCTION TO CHANGE BETWEEN TESTIMONIALS
 function toggleTestimonials(targetedSwitch , testimonials)

@@ -71,24 +71,11 @@ header
     margin-right: auto;
 }
 
-.main-logo-container 
+.main-logo 
 {
-    max-width: 300px;
-    max-height: 50px;
-    width: 300px;
-    height: 50px;
     flex-shrink: 0;
-    padding: 0;
-
 }
 
-.main-logo-container img
-{   
-    display: block;
-    max-width: 100%;
-    width: 100%;
-    height: 100%;
-}
 
 .links-container ul
 {
@@ -113,51 +100,38 @@ header
     color: var(--header-nav-links-fontcolor-hover);
 }
 
-.book-call-container
+.book-call-button
 {
     width: 210px;
     height: 45px;
     background:linear-gradient(to right, var(--sidebar-book-call-btn-gradientcolor-one), var(--sidebar-book-call-btn-gradientcolor-two));
     border-radius: .75rem;
-}
-
-.book-call-container button
-{
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    color: var(--header-bookcall-button-fontcolor);
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     gap: 7px;
+    color: var(--header-bookcall-button-fontcolor);
     font-family: "Sora" , sans-serif;
     font-weight: 600;
     font-size: 16px;
-    border-radius: .75rem;
     border: none;
     padding: 8px;
     outline: 4px solid transparent;  
     transition: all ease-in-out 0.5s;
+
+
 }
 
-.book-call-container button:hover,
-.view-pricing-container button:hover
+.book-call-button:hover,
+.view-pricing-button:hover
 {
     outline: 4px solid var(--header-bookcall-button-bordercolor-hover); 
 }
 
-.book-call-arrow-container
+.book-call-button > img
 {
-    width: 48px;
-    height: 48px;
-    flex-shrink: 0;
-}
 
-.book-call-arrow-container img
-{
-    width: 100%;
-    height: 100%;
+    flex-shrink: 0;
 }
 
 .burger-menu
@@ -186,7 +160,7 @@ header
 
 .sidebar-header-control-container,
 .sidebar-links-container,
-.sidebar .book-call-container
+.sidebar .book-call-button
 {
     width: 100%;
 }
@@ -242,21 +216,11 @@ header
 }
 
 .up,
-.toggler,
 .home
 {
     width: 30px;
     height: 30px;
     cursor: pointer;
-}
-
-
-.up img,
-.toggler img,
-.home img
-{
-    width: 100%;
-    height: 100%;
 }
 
 /* HERO */
@@ -341,16 +305,10 @@ header
     gap: 15px;
 }
 
-.view-pricing-container
+.view-pricing-button
 {
     width: 210px;
     height: 45px;
-}
-
-.view-pricing-container button
-{
-    width: 100%;
-    height: 100%;
     border-radius: .75rem;
     background-color: var(--hero-viewpricing-button-bgcolor);
     border: 3px solid var(--hero-viewpricing-button-bordercolor);
@@ -358,7 +316,7 @@ header
     transition: all ease-in-out 0.5s;
 }
 
-.view-pricing-container button a
+.view-pricing-button a
 {
     text-decoration: none;
     font-family: "Sora" , sans-serif;
@@ -1911,7 +1869,7 @@ div#special-price-card
 
     /* --- SIDEBAR + BURGER MENU --- */
     .links-container ul,
-    header .book-call-container
+    header .book-call-button
     {
         display: none;
     }
@@ -1937,7 +1895,7 @@ div#special-price-card
         height: 2px;
     }
 
-    .sidebar .book-call-container
+    .sidebar .book-call-button
     {
         display: flex;
     }
@@ -2070,8 +2028,8 @@ div#special-price-card
         align-items: stretch;
     }
 
-    .hero-buttons-container .book-call-container,
-    .hero-buttons-container .view-pricing-container
+    .hero-buttons-container .book-call-button,
+    .hero-buttons-container .view-pricing-button
     {
         width: 100%;
     }
@@ -2355,7 +2313,7 @@ div#special-price-card
         gap: 30px;
     }
 
-    .footer-header .main-logo-container
+    .footer-header .main-logo
     {
         padding-right: 30px;
     }
@@ -2417,13 +2375,6 @@ div#special-price-card
     }
 
     /* HEADER */
-
-    .main-logo-container 
-    {
-        width: 240px;
-        height: 50px;
-
-    }
 
     .hero
     {
@@ -2631,14 +2582,6 @@ div#special-price-card
 
 @media (max-width: 391px) 
 {
-    /* HEADER */
-    .main-logo-container 
-    {
-        width: 200px;
-        height: 50px;
-
-    }
-
 
     /* SUBSCRIPTION STEPS */
     .subscription-steps .big-title-container h2
@@ -2694,19 +2637,13 @@ div#special-price-card
     {
         gap: 6px;
     }
-    .main-logo-container 
-    {
-        width: 170px;
-        height: 50px;
 
-    }
-
-    .sidebar .main-logo-container
+    .sidebar .main-logo
     {
         width: 200px;
     } 
 
-    .footer .main-logo-container
+    .footer .main-logo
     {
         padding-right: 0;
         width: 200px;
@@ -2794,13 +2731,13 @@ div#special-price-card
         height: 900px;
     }
 
-    .hero-buttons-container .book-call-container
+    .hero-buttons-container .book-call-button
     {
         
         height: 100px;
     }
 
-    .hero-buttons-container .book-call-container button 
+    .hero-buttons-container .book-call-button 
     {
         flex-direction: column;
         flex-wrap: wrap;
