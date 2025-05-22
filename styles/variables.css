@@ -88,8 +88,8 @@
     --comparison-table-headtitles-fontcolor : #FFFFFF;
     --comparison-table-values-bgcolor : #0D2321;
     --comparison-table-values-fontcolor : #d4d4d4;
-    --comparison-table-vitruvian-values-gradientcolor-two : #51B8DE;
-    --comparison-table-vitruvian-values-gradientcolor-one : #44C6B4;
+    --comparison-table-melka-values-gradientcolor-two : #51B8DE;
+    --comparison-table-melka-values-gradientcolor-one : #44C6B4;
 
     --case-studies-bgcolor : #090513 ;
     --case-studies-bigtitle-fontcolor : #FFFFFF;
@@ -141,7 +141,7 @@
     --footer-sections-links-fontcolor : #afa9a975 ;
     --footer-sections-links-fontcolor-hover : #678689 ;
     --footer-foot-text-fontcolor : #737373;
-    --footer-foot-text-vitruvian-fontcolor : #FFFFFF;
+    --footer-foot-text-melka-fontcolor : #FFFFFF;
 
     --contact-bgcolor : #090513;
     --contact-bordercolor : #0A2322 ;
@@ -233,7 +233,7 @@
         --footer-sections-links-fontcolor : #7e7e7e ;
         --footer-sections-links-fontcolor-hover : #678689 ;
         --footer-foot-text-fontcolor : #737373;
-        --footer-foot-text-vitruvian-fontcolor : #0A2322;
+        --footer-foot-text-melka-fontcolor : #0A2322;
     
         --contact-sub-title-fontcolor : #0A2322 ;
         --contact-title-fontcolor : #0A2322 ;

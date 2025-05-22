@@ -817,9 +817,9 @@ header
     text-wrap: nowrap;
 }
 
-.comparison-table .table-values p.vitruvian-values
+.comparison-table .table-values p.melka-values
 {
-    background: linear-gradient(to right, var(--comparison-table-vitruvian-values-gradientcolor-one), var(--comparison-table-vitruvian-values-gradientcolor-two));
+    background: linear-gradient(to right, var(--comparison-table-melka-values-gradientcolor-one), var(--comparison-table-melka-values-gradientcolor-two));
 }
 
 /* CASE STUDIES */
@@ -1637,7 +1637,7 @@ div#special-price-card
     align-items: center;
 }
 
-.vitruvian-socials-container
+.melka-socials-container
 {
     display: flex;
     gap: 10px;
@@ -1727,7 +1727,7 @@ div#special-price-card
 .footer-foot p span
 {
     font-family: "Koulen" , sans-serif;
-    color: var(--footer-foot-text-vitruvian-fontcolor);
+    color: var(--footer-foot-text-melka-fontcolor);
 }
 
 /* MEDIA QUERIES */
@@ -2318,7 +2318,7 @@ div#special-price-card
         padding-right: 30px;
     }
 
-    .vitruvian-socials-container
+    .melka-socials-container
     {
         gap: 40px;
     }
@@ -2567,7 +2567,7 @@ div#special-price-card
         height: 30px;
     }
 
-    .vitruvian-socials-container
+    .melka-socials-container
     {
         gap: 30px;
     }
@@ -2617,7 +2617,7 @@ div#special-price-card
     }
 
     /* FOOTER */
-    .vitruvian-socials-container
+    .melka-socials-container
     {
         gap: 25px;
     }
@@ -2718,7 +2718,7 @@ div#special-price-card
         height: 25px;
     }
 
-    .vitruvian-socials-container
+    .melka-socials-container
     {
         gap: 20px;
     }
